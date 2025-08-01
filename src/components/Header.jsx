@@ -3,20 +3,19 @@ export default function Header() {
   return (
     <header className="w-full bg-white shadow-sm">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4">
-        <p className="text-2xl font-bold text-black">Lucas Ryan</p>
-
+        <p className="text-xl font-medium font-mono text-black">lucas ryan</p>
         <nav className="space-x-6">
           <a
             href="#about"
-            className="text-black hover:text-blue-600 transition-colors duration-200"
+            className="text-black text-xl font-mono hover:text-purple-400 hover:drop-shadow-[0_0_4px_rgba(192,132,252,0.8)] transition-colors duration-200"
           >
-            About
+            about
           </a>
           <a
             href="#resume"
-            className="text-black hover:text-blue-600 transition-colors duration-200"
+            className="text-black text-xl font-mono hover:text-purple-400 hover:drop-shadow-[0_0_4px_rgba(192,132,252,0.8)] transition-colors duration-200"
           >
-            Resume
+            resume
           </a>
         </nav>
       </div>
