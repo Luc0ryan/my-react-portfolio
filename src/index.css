@@ -4,6 +4,7 @@
 
 /* index.css */
 @theme {
+  --color-debug: #ff00ff;
   --font-sans:  "Open Sans", sans-serif;
   --font-mono: "Inconsolata", monospace;
 }
