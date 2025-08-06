@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
 import Header from "./components/Header.jsx";
+import PortfolioSection from "./components/PortfolioCard.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,27 +8,32 @@ function App() {
   return (
     <>
       <Header />
-      <div className="max-w-screen-xl mx-auto flex flex-col py-20 gap-8">
 
+
+       {/* Hero section */}
+
+      <div className="max-w-screen-xl mx-auto flex flex-col py-20 gap-12">
         <div className="text-5xl/relaxed font-sans font-bold">
           Clear design for a complex world <br />
           Solutions that work beyond the screen
           <br />
           Building in ☀️ San Jose
         </div>
-        
-    <div className="bg-debug text-white p-8">
-      Config Test
-    </div>
-
-        <div className="text-5xl/relaxed font-sans font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-500">
-          Lucas Ryan
-        </div>
-
-        <div className="text-5xl/relaxed font-sans font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-500 bg-[length:200%_200%] animate-gradient-slow">
+        <div className="text-5xl/relaxed text-right font-sans font-bold bg-clip-text text-transparent animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 h-64 w-full">
           Lucas Ryan
         </div>
       </div>
+
+      {/* First case study - AARBF */}
+    <div className = "space-y-24 max-w-screen-xl mx-auto">
+      <PortfolioSection
+        logo = "/images/aarbf-logo-horizontal.png"
+        description = "Full-scale redesign to keep the organization relevant and the community engaged"
+        link = "#"
+        image = "/images/aarbf-case-study.png"
+        />
+    </div>
+      
     </>
   );
 }
