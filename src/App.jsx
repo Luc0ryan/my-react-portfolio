@@ -19,7 +19,7 @@ function App() {
           <br />
           Building in ☀️ San Jose
         </div>
-        <div className="text-5xl/relaxed text-right font-sans font-bold bg-clip-text text-transparent animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 h-64 w-full">
+        <div className="text-5xl/relaxed text-center font-sans font-bold bg-clip-text text-transparent animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 w-full">
           Lucas Ryan
         </div>
       </div>
@@ -31,6 +31,12 @@ function App() {
         description = "Full-scale redesign to keep the organization relevant and the community engaged"
         link = "#"
         image = "/images/aarbf-case-study.png"
+        />
+        <PortfolioSection
+        logo = "/images/tfr-logo.png"
+        description = "Revamping the event page in accordance to design standards and a broad target audience"
+        link = "#"
+        image = "/images/thermofisher-scr.png"
         />
     </div>
       

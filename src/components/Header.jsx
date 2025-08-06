@@ -12,7 +12,8 @@ export default function Header() {
             about
           </a>
           <a
-            href="#resume"
+            href="/pdfs/resume-needsupdate.pdf"
+            target = "_blank"
             className="text-black font-medium text-xl font-mono hover:text-purple-400 hover:drop-shadow-[0_0_4px_rgba(192,132,252,0.8)] transition-colors duration-200"
           >
             resume
