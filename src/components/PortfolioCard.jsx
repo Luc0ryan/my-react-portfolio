@@ -1,24 +1,25 @@
-export default function PortfolioSection({ logo, description, link, image }) {
+export default function PortfolioSection({ logo, logoAlt, description, link, image, imageAlt }) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center py-16 px-6 md:px-12 bg-white">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center py-20 md:py-28">
+      
       {/* Left Column */}
-      <div className="flex flex-col  space-y-6">
+      <div className="flex flex-col space-y-8 px-6 sm:px-10 md:px-0">
         {/* Logo */}
         <img 
           src={logo} 
-          alt="Organization Logo" 
-          className="w-1/2 h-auto"
+          alt={logoAlt}
+          className="w-2/3 max-w-xs h-auto"
         />
-        
+
         {/* Description */}
-        <p className="text-[32px] font-bold leading-tight text-gray-900">
+        <p className="text-[28px] sm:text-[32px] font-bold leading-snug text-gray-900">
           {description}
         </p>
 
         {/* Read More Link */}
         <a 
           href={link} 
-          className="inline-flex items-center font-semibold text-black hover:text-blue-800 transition-colors"
+          className="inline-flex items-center font-medium text-black hover:text-blue-700 transition-colors"
         >
           Read More
           <svg 
@@ -28,17 +29,17 @@ export default function PortfolioSection({ logo, description, link, image }) {
             viewBox="0 0 24 24" 
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
           </svg>
         </a>
       </div>
 
       {/* Right Column (Image) */}
-      <div className="flex justify-center">
+      <div className="flex justify-center px-6 sm:px-10 md:px-0">
         <img 
           src={image} 
-          alt="Case Study Preview" 
-          className="w-full h-auto"
+          alt={imageAlt}
+          className="w-full max-w-xl h-auto"
         />
       </div>
     </section>
