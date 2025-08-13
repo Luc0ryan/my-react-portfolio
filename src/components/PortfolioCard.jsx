@@ -1,9 +1,11 @@
+import Button from "./Button";
+
 export default function PortfolioSection({ logo, logoAlt, description, link, image, imageAlt }) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center py-20 md:py-28">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center py-16">
       
       {/* Left Column */}
-      <div className="flex flex-col space-y-8 px-6 sm:px-10 md:px-0">
+      <div className="order-2 md:order-1 flex flex-col space-y-8 px-6 sm:px-10 md:px-0">
         {/* Logo */}
         <img 
           src={logo} 
@@ -16,26 +18,16 @@ export default function PortfolioSection({ logo, logoAlt, description, link, ima
           {description}
         </p>
 
-        {/* Read More Link */}
-        <a 
-          href={link} 
-          className="inline-flex items-center font-medium text-black hover:text-blue-700 transition-colors"
-        >
-          Read More
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="w-5 h-5 ml-2" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
+        {/* Read More (Button as Link) */}
+        <Button
+          text="Read More"
+          link={link}
+          onHoverColor="bg-blue-700"
+        />
       </div>
 
       {/* Right Column (Image) */}
-      <div className="flex justify-center px-6 sm:px-10 md:px-0">
+      <div className="order-1 md:order-2 flex justify-center px-6 sm:px-10 md:px-0">
         <img 
           src={image} 
           alt={imageAlt}

@@ -9,23 +9,23 @@ function App() {
 <>
   <Header />
 
-  <div className="max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-20 space-y-32 py-20">
+  <div className="max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-20 space-y-3 py-6">
 
     {/* Hero section */}
-    <div className="flex flex-col gap-12">
-      <div className="text-5xl/relaxed font-sans font-bold">
+    <div className="flex flex-col gap-12 text-[clamp(1.25rem,8vw,3.5rem)]">
+      <div className="font-sans font-semibold">
         Clear design for a complex world <br />
         Solutions that work beyond the screen
         <br />
         Building in ☀️ San Jose
       </div>
-      <div className="text-5xl/relaxed text-center font-sans font-bold bg-clip-text text-transparent animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 w-full">
+      <div className="text-center font-sans font-semibold bg-clip-text text-transparent animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 w-full">
         Lucas Ryan
       </div>
     </div>
 
     {/* Portfolio section */}
-    <div className="space-y-24">
+    <div>
       <PortfolioSection
         logo="/images/aarbf-logo-horizontal.png"
         logoAlt="Alisa Ann Ruth Burn Foundation logo"

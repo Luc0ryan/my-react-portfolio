@@ -11,5 +11,9 @@ export default {
       },
     },
   },
+  safelist: [
+    'hover:bg-blue-700',
+    'hover:bg-red-500',
+  ],
   plugins: [],
 }

@@ -1,9 +1,9 @@
 
 export default function Header() {
   return (
-    <header className="w-full bg-white shadow-sm">
+    <header className="w-full">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-12 py-4">
-        <p className="text-xl font-medium font-mono text-black">lucas ryan</p>
+        <p className="text-xl font-medium font-mono text-black">lkr</p>
         <nav className="space-x-6">
           <a
             href="#about"
