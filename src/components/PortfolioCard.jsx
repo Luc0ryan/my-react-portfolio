@@ -14,7 +14,7 @@ export default function PortfolioSection({ logo, logoAlt, description, link, ima
         />
 
         {/* Description */}
-        <p className="text-[28px] sm:text-[32px] font-bold leading-snug text-gray-900">
+        <p className="text-[28px] sm:text-[32px] font-medium antialiased leading-snug text-gray-900">
           {description}
         </p>
 
@@ -22,7 +22,8 @@ export default function PortfolioSection({ logo, logoAlt, description, link, ima
         <Button
           text="Read More"
           link={link}
-          onHoverColor="bg-blue-700"
+          onHoverColor="bg-violet-700"
+          onHoverBorder="border-violet-700"
         />
       </div>
 
