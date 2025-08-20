@@ -1,31 +1,18 @@
-import { useState } from "react";
 import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.tsx";
 import PortfolioSection from "./components/PortfolioCard.jsx";
 
 function App() {
   return (
-    <>
+    <div className = "bg-[#F7E6D5]">
+
+
       <Header />
 
-      <div className="max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-16 space-y-3 py-6 font-sans">
-        {/* Hero section */}
-        <div className="font-regular antialiased flex flex-col items-start pb-12 text-[clamp(1.25rem,4vw,3rem)]">
-          <div>
-            Clear design for a complex world <br />
-            Solutions that work beyond the screen
-            <br />
-            Building in ☀️ San Jose
-          </div>
 
-          <div className="mt-1 flex flex-col">
-            <span className="bg-gradient-to-r from-indigo-700 to-violet-700 bg-clip-text text-transparent inline-block w-fit">
-              Lucas Ryan
-            </span>
-            <span className="bg-gradient-to-r from-indigo-700 to-violet-700 bg-clip-text text-transparent inline-block w-fit text-[clamp(0.9rem,3vw,1.25rem)]">
-              Product Designer/Front-end Developer
-            </span>
-          </div>
-        </div>
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-16 space-y-3 py-6 font-sans">
+      <Hero />
+       
 
         {/* Portfolio section */}
         <div>
@@ -47,7 +34,7 @@ function App() {
           />
         </div>
       </div>
-    </>
+            </div>
   );
 }
 
