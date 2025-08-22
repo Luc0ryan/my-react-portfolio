@@ -14,7 +14,7 @@ export default function Hero() {
           <Wheel
             words={["humans", "clarity", "speed"]}
             intervalMs={4000}                // unchanged
-            durationMs={1000}                // unchanged
+            durationMs={1200}                // unchanged
             easing="cubic-bezier(0.2,0.65,0,1)" // unchanged
             className="font-semibold text-[48px] md:text-[64px] leading-none"
           />

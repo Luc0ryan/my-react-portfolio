@@ -1,17 +1,17 @@
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.tsx";
 import PortfolioSection from "./components/PortfolioCard.jsx";
+import StaticWheel from "./components/StaticWheel.jsx";
 
 function App() {
   return (
-    <div className = "bg-[#F7E6D5]">
-
+    <div className = "bg-[#FAFAF9]">
 
       <Header />
 
-
       <div className="max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-16 space-y-3 py-6 font-sans">
-      <Hero />
+
+      <StaticWheel />
        
 
         {/* Portfolio section */}
