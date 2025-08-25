@@ -1,5 +1,5 @@
+import About from "./components/About.jsx";
 import Header from "./components/Header.jsx";
-import Hero from "./components/Hero.tsx";
 import PortfolioSection from "./components/PortfolioCard.jsx";
 import StaticWheel from "./components/StaticWheel.jsx";
 
@@ -8,11 +8,14 @@ function App() {
     <div className = "bg-[#FAFAF9] ">
 
       <Header />
+
+
       <StaticWheel />
 
       <div className="max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-16 space-y-3 py-6 font-sans">
 
-       
+      <About />
+
 
         {/* Portfolio section */}
         <div>
