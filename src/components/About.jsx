@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="max-w-xl font-semibold">
       <div className="mb-6">
-        <div className="text-5xl leading-none"> hi, i'm Lucas </div>
+        <div className="text-5xl leading-none"> hi, i'm lucas </div>
         <div className="text-2xl mt-2">product designer · front-end dev </div>
       </div>
 
@@ -14,21 +14,27 @@ export default function About() {
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 -translate-y-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
               resume
             </div>
-            <FileText size={24} />
+            <a href="#">
+              <FileText size={24} />
+            </a>
           </div>
 
           <div className="group flex flex-col items-center">
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 -translate-y-1 opacity-0 group-hover:opacity-100 transition-opacity">
               linkedin
             </div>
-            <ContactRound size={24} />
+            <a href="#">
+              <ContactRound size={24} />
+            </a>
           </div>
 
           <div className="group flex flex-col items-center">
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 -translate-y-1 opacity-0 group-hover:opacity-100 transition-opacity">
               github
             </div>
-            <Github size={24} />
+            <a href="#">
+              <Github size={24} />
+            </a>
           </div>
         </div>
 
