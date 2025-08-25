@@ -1,4 +1,4 @@
-import { FileText, ContactRound, Github } from "lucide-react";
+import { FileText, User, Github } from "lucide-react";
 
 export default function About() {
   return (
@@ -11,24 +11,25 @@ export default function About() {
       <div className="flex flex-row gap-3">
         <div className="flex flex-col mt-2 gap-6 text-xs h-fit">
           <div className="group flex flex-col items-center">
-            <div className="absolute -rotate-90 origin-bottom -translate-x-4 -translate-y-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:pointer-cursor transition-opacity">
               resume
             </div>
-            <FileText size={24} />
+            <FileText className="h-8 w-8 "/>
           </div>
 
           <div className="group flex flex-col items-center">
-            <div className="absolute -rotate-90 origin-bottom -translate-x-4 -translate-y-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
               linkedin
             </div>
-            <ContactRound size={24} />
+            <User className="h-8 w-8 pcursorointer-"/>
+
           </div>
 
           <div className="group flex flex-col items-center">
-            <div className="absolute -rotate-90 origin-bottom -translate-x-4 -translate-y-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
               github
             </div>
-            <Github size={24} />
+            <Github className="h-8 w-8 pointer-cursor"/>
           </div>
         </div>
 

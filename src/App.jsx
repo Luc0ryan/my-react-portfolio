@@ -3,6 +3,7 @@ import Header from "./components/Header.jsx";
 import PortfolioSection from "./components/PortfolioCard.jsx";
 import StaticWheel from "./components/StaticWheel.jsx";
 
+
 function App() {
   return (
     <div className = "bg-[#FAFAF9] ">
