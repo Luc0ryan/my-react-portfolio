@@ -2,10 +2,10 @@ import Button from "./Button";
 
 export default function PortfolioSection({ logo, logoAlt, description, link, image, imageAlt }) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center py-16">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center py-16">
       
       {/* Left Column */}
-      <div className="order-2 md:order-1 flex flex-col space-y-8 px-6 sm:px-10 md:px-0">
+      <div className="order-2 md:order-1 flex flex-col space-y-4 px-6 sm:px-10 md:px-0">
         {/* Logo */}
         <img 
           src={logo} 

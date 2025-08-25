@@ -2,7 +2,7 @@ export default function Button({ text, onHoverColor,onHoverBorder, link }) {
     return (
       <a
         href={link}
-        className={`group px-2 py-2 border-2 border-gray-900 bg-white text-gray-900 inline-flex items-center max-w-fit font-semibold rounded-lg 
+        className={`group px-2 py-2 border-2 border-gray-700 bg-gray-200 text-gray-700 inline-flex items-center max-w-fit font-semibold rounded-lg 
           hover:${onHoverColor} hover:text-white hover:${onHoverBorder} transition-colors duration-200`}
       >
         <span>{text}</span>

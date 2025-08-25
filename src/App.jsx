@@ -5,13 +5,13 @@ import StaticWheel from "./components/StaticWheel.jsx";
 
 function App() {
   return (
-    <div className = "bg-[#FAFAF9]">
+    <div className = "bg-[#FAFAF9] ">
 
       <Header />
+      <StaticWheel />
 
       <div className="max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-16 space-y-3 py-6 font-sans">
 
-      <StaticWheel />
        
 
         {/* Portfolio section */}

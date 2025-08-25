@@ -1,36 +1,41 @@
-// StaticWheel.tsx
 export default function StaticWheel() {
   return (
-    <section className="w-full overflow-x-hidden text-black font-semibold leading-none text-[48px] md:text-[64px]">
-      {/* Center the whole group horizontally on all breakpoints */}
-      <div className="mx-auto flex max-w-full flex-col md:flex-row justify-center gap-4 items-center md:items-start">
-        
-        {/* Label: baseline-align with the middle word on desktop */}
-        <div className="md:translate-y-[calc(2*1em)]">
-          Design for
-        </div>
+    <section
+      className="
+        w-full 
+        overflow-x-hidden overflow-y-visible
+        py-12 md:py-20          /* give top/bottom breathing room */
+        text-black font-semibold leading-none
+        text-[clamp(3rem,8vw,4rem)] /* smooth responsive font sizing */
+      "
+    >
+      <div
+        className="
+          mx-auto flex max-w-full 
+          flex-col md:flex-row 
+          justify-center items-center md:items-center gap-6
+        "
+      >
+        {/* Label: keep vertically aligned without manual translate */}
+        <div className="whitespace-nowrap">Design for</div>
 
         {/* Words */}
-        <div
+        <ul
           className="
-            inline-flex select-none
-            flex-row justify-center md:flex-col
-            gap-3 md:gap-0                       /* ⬅ tighten: no vertical gap on desktop */
-            max-w-full whitespace-nowrap
-            overflow-visible md:overflow-visible /* ⬅ ensure no vertical clipping */
-            self-center md:self-auto
-            md:[&>span]:block                     /* ⬅ each line is a block on desktop */
-            md:[&>span]:m-0 md:[&>span]:p-0       /* ⬅ remove any residual spacing */
+            inline-flex md:flex-col 
+            gap-3 md:gap-0 
+            leading-[1] md:leading-[1]   /* tighter vertical fit */
+            text-center md:text-left
           "
         >
-          <span className="opacity-10">tech</span>
-          <span className="opacity-10 md:opacity-20">intent</span>
-          <span className="bg-gradient-to-r from-[#828AF8] via-[#9265F7] to-[#A78BFA] bg-clip-text text-transparent">
+          <li className="opacity-10">tech</li>
+          <li className="opacity-20">intent</li>
+          <li className="bg-gradient-to-r from-[#828AF8] via-[#9265F7] to-[#A78BFA] bg-clip-text text-transparent">
             humans
-          </span>
-          <span className="opacity-10 md:opacity-20">intent</span>
-          <span className="opacity-10">tech</span>
-        </div>
+          </li>
+          <li className="opacity-20">intent</li>
+          <li className="opacity-10">tech</li>
+        </ul>
       </div>
     </section>
   );
