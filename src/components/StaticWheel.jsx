@@ -4,7 +4,7 @@ export default function StaticWheel() {
       className="
         w-full 
         overflow-x-hidden overflow-y-visible
-        py-12 md:py-20          /* give top/bottom breathing room */
+        py-12 md:py-16          /* give top/bottom breathing room */
         text-black font-semibold leading-none
         text-[clamp(3rem,8vw,4rem)] /* smooth responsive font sizing */
       "

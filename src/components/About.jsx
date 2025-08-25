@@ -4,10 +4,10 @@ export default function About() {
   return (
     <section className="max-w-xl font-semibold">
       <div className="mb-6">
-        <div className="text-5xl leading-none"> hi, i'm Lucas </div>
+        <div className="text-5xl leading-none"> hi, i'm lucas </div>
         <div className="text-2xl mt-2">product designer · front-end dev </div>
       </div>
-
+size={24}
       <div className="flex flex-row gap-3">
         <div className="flex flex-col mt-2 gap-6 text-xs h-fit">
           <div className="group flex flex-col items-center">
@@ -21,7 +21,9 @@ export default function About() {
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
               linkedin
             </div>
-            <User className="h-8 w-8 pcursorointer-"/>
+            <a href= "#">
+            <User className="h-8 w-8 cursor-pointer"/>
+            </a>
 
           </div>
 
