@@ -7,14 +7,16 @@ export default function About() {
         <div className="text-5xl leading-none"> hi, i'm lucas </div>
         <div className="text-2xl mt-2">product designer · front-end dev </div>
       </div>
-size={24}
+
       <div className="flex flex-row gap-3">
         <div className="flex flex-col mt-2 gap-6 text-xs h-fit">
           <div className="group flex flex-col items-center">
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:pointer-cursor transition-opacity">
               resume
             </div>
+            <a href= "#">
             <FileText className="h-8 w-8 "/>
+            </a>
           </div>
 
           <div className="group flex flex-col items-center">
@@ -22,7 +24,7 @@ size={24}
               linkedin
             </div>
             <a href= "#">
-            <User className="h-8 w-8 cursor-pointer"/>
+            <User className="h-8 w-8"/>
             </a>
 
           </div>
@@ -31,7 +33,9 @@ size={24}
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
               github
             </div>
-            <Github className="h-8 w-8 pointer-cursor"/>
+            <a href ="#">
+            <Github className="h-8 w-8"/>
+            </a>
           </div>
         </div>
 
