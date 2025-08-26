@@ -40,8 +40,7 @@ export default function About() {
 
         <div className="flex flex-col text-lg gap-2 font-normal border-l-2 pl-3">
           <div>
-            I'm drawn to design that makes the hard things invisible and the
-            simple things obvious.
+            I craft seamless, user-focused products that balance design and code.
           </div>
           <div>
             When I'm not building, you'll find me weightlifting, hiking around
@@ -50,9 +49,13 @@ export default function About() {
           <div>
             I'm always looking out for a new project, feel free to start a convo
             at{" "}
-            <span className="font-bold text-indigo-700">
-              lucryan@gmail.com!
-            </span>
+            <a href="mailto:lucryan@gmail.com" 
+   className="relative inline-block px-1 rounded bg-violet-100 text-indigo-700 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 
+              after:h-[2px] after:w-0 after:bg-indigo-600 after:transition-all 
+              hover:after:w-full">
+  lucryan@gmail.com
+</a>
           </div>
         </div>
       </div>
