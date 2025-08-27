@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 /* index.css */
@@ -7,6 +7,7 @@
   --color-debug: #ff00ff;
   --font-sans:  "Open Sans", sans-serif;
   --font-mono: "Inconsolata", monospace;
+  --font-crimson: "Crimson Pro", serif;
 }
 
 @layer utilities {

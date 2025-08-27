@@ -26,10 +26,9 @@ function App() {
           <div className="mx-auto w-full max-w-2xl">
             <div className="flex flex-col gap-6">
               <PortfolioSection
-                logo="/images/aarbf-logo-horizontal.png"
-                logoAlt="Alisa Ann Ruth Burn Foundation logo"
-                description="Full-scale redesign to keep the organization relevant and the community engaged"
-                color="bg-blue-50 text-blue-800"
+                title="Full-scale redesign to boost relevancy and keep the community engaged with seasonal events"
+                description= "Figma · Web Designer · UI/UX Design "
+                color="bg-blue-50"
                 link="#"
                 image="/images/aarbf-case-study.png"
                 imageAlt="Two-screen mockup of a nonprofit website redesign, highlighting the homepage and donation flow with a clean, accessible layout."
@@ -38,7 +37,7 @@ function App() {
                 logo="/images/tfr-logo.png"
                 logoAlt="ThermoFisher Scientific logo"
                 description="Revamping the event page in accordance to design standards and a broad target audience"
-                color="bg-rose-50 text-rose-800"
+                color="bg-rose-50"
                 link="#"
                 image="/images/thermofisher-scr.png"
                 imageAlt="ThermoFisher events page design framed in a Macintosh desktop mockup"
