@@ -8,14 +8,14 @@ export default function About() {
         <div className="text-2xl mt-2">product designer · front-end dev </div>
       </div>
 
-      <div className="flex flex-row gap-3">
+      <div className="flex flex-row items-center gap-3 font-bold text-sm">
         <div className="flex flex-col mt-1 gap-6 text-xs h-fit">
           <div className="group flex flex-col items-center">
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:pointer-cursor transition-opacity">
               resume
             </div>
             <a href="#">
-              <FileText className="h-8 w-8 stroke-[1.25px]" />
+              <FileText className="h-8 w-8 stroke-[1.5px]" />
             </a>
           </div>
 
@@ -24,7 +24,7 @@ export default function About() {
               linkedin
             </div>
             <a href="#">
-              <User className="h-8 w-8 stroke-[1.25px]" />
+              <User className="h-8 w-8 stroke-[1.5px]" />
             </a>
           </div>
 
@@ -33,7 +33,7 @@ export default function About() {
               github
             </div>
             <a href="#">
-              <Github className="h-8 w-8 stroke-[1.25px]" />
+              <Github className="h-8 w-8 stroke-[1.5px]" />
             </a>
           </div>
         </div>

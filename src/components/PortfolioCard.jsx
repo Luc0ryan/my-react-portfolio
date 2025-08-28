@@ -1,18 +1,16 @@
 export default function PortfolioSection({
   description,  // subtitle
   color,        // background/text color class
-  link,         // entire card is clickable
   image,
   imageAlt,
   title,        // main title
 }) {
   return (
-    <a
-      href={link}
+    <div
       className={`max-w-2xl flex flex-col gap-2 items-left 
                   py-4 px-4 rounded-lg border border-neutral-300 
                   transition-transform duration-300 
-                  hover:-translate-y-1 shadow-sm hover:shadow-md ${color}`}
+                  hover:-translate-y-0.5 hover:shadow-sm ${color}`}
     >
       {/* Top Image */}
       <div className="w-full flex justify-center">
@@ -32,6 +30,6 @@ export default function PortfolioSection({
       <p className="text-sm md:text-lg text-left leading-snug">
         {description}
       </p>
-    </a>
+    </div>
   );
 }

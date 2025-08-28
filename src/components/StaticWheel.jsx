@@ -13,7 +13,7 @@ export default function StaticWheel() {
         className="
           mx-auto flex max-w-full 
           flex-col md:flex-row 
-          justify-center items-center md:items-center gap-6
+          justify-left items-center md:items-center gap-6
         "
       >
         {/* Label: keep vertically aligned without manual translate */}
@@ -28,12 +28,12 @@ export default function StaticWheel() {
             text-center md:text-left
           "
         >
-          <li className="opacity-10">tech</li>
-          <li className="opacity-20">intent</li>
+          <li className="opacity-10">intent</li>
+          <li className="opacity-20">system</li>
           <li className="bg-gradient-to-r from-[#828AF8] via-[#9265F7] to-[#A78BFA] bg-clip-text text-transparent">
             humans
           </li>
-          <li className="opacity-20">intent</li>
+          <li className="opacity-20">impact</li>
           <li className="opacity-10">tech</li>
         </ul>
       </div>
