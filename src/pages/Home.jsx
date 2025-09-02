@@ -32,12 +32,21 @@ export default function Home() {
 
             <Link to="/thermofisher" className="block">
               <PortfolioSection
-                logo="/images/tfr-logo.png"
-                logoAlt="ThermoFisher Scientific logo"
-                description="Revamping the event page to align with design standards and a broad audience"
+                title="Revamping event discovery to enhance relevance, accessibility & mobile experience"
+                description= "Responsive Design · Design System · Figma"
                 color="bg-rose-50"
                 image="/images/thermofisher-scr.png"
                 imageAlt="ThermoFisher events page design framed in a Macintosh desktop mockup"
+              />
+            </Link>
+
+            <Link to="/squash" className="block">
+              <PortfolioSection
+                title="Turning local connections into clear experiences"
+                description= "UX Research · Prototyping · Community"
+                color="bg-emerald-50"
+                image="/images/squash.png"
+                imageAlt="Squash mockup in iphone frame"
               />
             </Link>
           </div>

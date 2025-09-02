@@ -8,17 +8,18 @@ export default function PortfolioSection({
   return (
     <div
       className={`max-w-2xl flex flex-col gap-2 items-left 
-                  py-4 px-4 rounded-lg border border-neutral-300 
+                  pb-4 px-4 rounded-lg border border-neutral-300 
                   transition-transform duration-300 
                   hover:-translate-y-0.5 hover:shadow-sm ${color}`}
     >
       {/* Top Image */}
       <div className="w-full flex justify-center">
-        <img
-          src={image}
-          alt={imageAlt}
-          className="w-full max-w-xl h-auto rounded-md"
-        />
+<img
+  src={image}
+  alt={imageAlt}
+  className="w-full max-w-xl max-h-100 rounded-md object-cover"
+/>
+
       </div>
 
       {/* Title */}
@@ -27,7 +28,7 @@ export default function PortfolioSection({
       </h3>
 
       {/* Sub-title / Description */}
-      <p className="text-sm md:text-lg text-left leading-snug">
+      <p className="text-xs md:text-lg text-left leading-none">
         {description}
       </p>
     </div>
