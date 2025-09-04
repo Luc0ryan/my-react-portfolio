@@ -1,4 +1,7 @@
 import { Routes, Route } from "react-router-dom";
+import 'photoswipe/style.css';
+import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css';
+
 import Header from "./components/Header.jsx";
 import Home from "./pages/Home.jsx";
 import AARBFCaseStudy from "./pages/AARBFCaseStudy.jsx";
