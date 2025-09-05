@@ -31,7 +31,7 @@ import type { Point } from 'photoswipe';
 // Dynamic caption plugin
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore - plugin has no TS types bundled
-import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 
 // -----------------------------
 // Container that wires up PhotoSwipe + plugin for all child items
@@ -80,7 +80,7 @@ export function ZoomableGallery({
   }, [padding, captionType]);
 
   return (
-    <div ref={galleryRef} className="pswp-gallery grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <div ref={galleryRef} className="pswp-gallery grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-4 ">
       {children}
     </div>
   );

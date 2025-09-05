@@ -1,6 +1,6 @@
 // src/pages/SquashCaseStudy.jsx
 
-import ZoomableImage from "../components/ZoomableImage.jsx";
+import ZoomableImage, { ZoomableGallery, ZoomableItem } from "../components/ZoomableImage.jsx";
 
 export default function SquashCaseStudy() {
   return (
@@ -54,20 +54,17 @@ export default function SquashCaseStudy() {
           {/* <li>Usability test completion rate ↑ from X% → Y% (n = ...)</li> */}
         </ul>
 
-        <figure className="mt-6">
-          <img
-            src="/images/squash-hero.png"
-            alt="Squash hero montage"
-            className="w-full rounded-lg border border-stone-200"
-          />
-        </figure>
-
         <figure className="my-6">
-  <ZoomableImage
-    src="/images/squash-hero.png"
-    alt="Squash hero montage"
-    thumbHeight={260}        // tweak per section
+  
+<ZoomableGallery>
+<ZoomableItem
+    fullSrc="/images/squash-hero.png"
+    thumbSrc="/images/squash-hero.png"
+    width={2048}
+    height={1280}
+    alt="AARBF website redesign — homepage and donation flow"
   />
+</ZoomableGallery>
 </figure>
       </section>
 
@@ -103,11 +100,16 @@ export default function SquashCaseStudy() {
           <li>Vendors value relationships; solutions should be low-effort for them.</li>
         </ul>
         <figure className="mt-6">
-          <img
-            src="/images/squash-personas.png"
-            alt="Primary and secondary personas"
-            className="w-full rounded-lg border border-stone-200"
-          />
+
+<ZoomableGallery>
+<ZoomableItem
+    fullSrc="/images/squash-personas.png"
+    thumbSrc="/images/squash-personas.png"
+    width={2048}
+    height={1280}
+    alt="Personas curated based on our interviews with vendors and frequent visitors"
+  />
+</ZoomableGallery>
         </figure>
       </section>
 
