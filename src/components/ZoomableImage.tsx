@@ -126,23 +126,30 @@ export function ZoomableItem({
         />
 
         {/* Affordance: magnifying glass (subtle) */}
-        <span
-          aria-hidden="true"
-          className="pointer-events-none absolute bottom-2 right-2 inline-flex items-center justify-center rounded-full bg-black/35 p-1.5 opacity-75 shadow-sm transition group-hover:opacity-100 group-focus-within:opacity-100"
-        >
-          {/* Using a simple SVG to avoid extra deps; swap with Lucide if desired */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            className="h-5 w-5 text-white"
-          >
-            <circle cx="11" cy="11" r="7" />
-            <line x1="21" y1="21" x2="16.65" y2="16.65" />
-          </svg>
-        </span>
+{/* Affordance: magnifying glass (only on hover/focus) */}
+<span
+  aria-hidden="true"
+  className="
+    pointer-events-none absolute bottom-2 right-2 inline-flex items-center justify-center
+    rounded-full bg-black/35 p-1.5 shadow-sm
+    opacity-0 transition
+    group-hover:opacity-100
+    group-focus-visible:opacity-100
+  "
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    className="h-5 w-5 text-white"
+  >
+    <circle cx="11" cy="11" r="7" />
+    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+  </svg>
+</span>
+
 
         {/* Hidden (but accessible) caption node for the plugin; will be read by captionContent() */}
         {children ? (

@@ -119,15 +119,19 @@ export default function SquashCaseStudy() {
         <div className="mt-4 grid gap-6 md:grid-cols-2">
           <div className="rounded-lg border border-stone-200 bg-white p-5">
             <h3 className="text-lg font-semibold">1) Navigation</h3>
-            <p className="mt-2 leading-7">
+            <p className="my-2 leading-7">
               Trimmed to three core areas (Landing · Map · Profile) to keep
               users focused on getting to a market quickly.
             </p>
-            <img
-              src="/images/squash-wireframes.png"
-              alt="Lo-fi IA and nav"
-              className="mt-4 rounded-lg border border-stone-200"
-            />
+            <ZoomableGallery>
+<ZoomableItem
+    fullSrc="/images/squash-wireframes.png"
+    thumbSrc="/images/squash-wireframes.png"
+    width={2048}
+    height={1280}
+    alt="Lo-fi IA and nav"
+  />
+</ZoomableGallery>
           </div>
           <div className="rounded-lg border border-stone-200 bg-white p-5">
             <h3 className="text-lg font-semibold">2) Cards & Scanability</h3>
