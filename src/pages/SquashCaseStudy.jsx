@@ -216,26 +216,106 @@ export default function SquashCaseStudy() {
         </div>
       </section>
 
-      {/* Final screens */}
-      <section className="max-w-screen-md mx-auto px-6 md:px-12 lg:px-16 py-8">
-        <h2 className="text-2xl md:text-3xl font-semibold">Final Screens</h2>
-        <p className="mt-3 leading-7">
-          The final prototype removes friction between curiosity and a market
-          trip—clean IA, predictable patterns, and quick routes to action.
-        </p>
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img
-            src="/images/squash-keyfeature.png"
-            alt="Key feature"
-            className="rounded-lg border border-stone-200"
+{/* Final Results — All-Star Landing */}
+<section className="max-w-screen-md mx-auto px-6 md:px-12 lg:px-16 py-12">
+  {/* Headline */}
+  <header>
+    <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+      Final Results
+    </h2>
+    <p className="mt-2 text-stone-700 leading-relaxed">
+      A four-step path from discovery to action: follow favorite vendors, skim a social feed,
+      confirm with the map, and head to the market—in fewer taps and with clearer choices.
+    </p>
+  </header>
+
+  {/* KPI strip (directional is fine—edit to whatever you can defend) */}
+  <ul className="mt-5 grid grid-cols-2 md:grid-cols-3 gap-3">
+    {[
+      { stat: "3 taps", label: "to Directions from list" },
+      { stat: "↑ scan speed", label: "via card rhythm" },
+      { stat: "Vendor-first", label: "follow across markets" },
+    ].map((k) => (
+      <li key={k.label} className="rounded-lg border border-stone-200 bg-white/70 backdrop-blur-sm px-4 py-3">
+        <div className="text-lg font-semibold">{k.stat}</div>
+        <div className="text-sm text-stone-600">{k.label}</div>
+      </li>
+    ))}
+  </ul>
+
+  {/* Hero montage (single big composite made from your 4 screens). 
+      If you don't have a composite image yet, this grid acts as a stand-in and still looks premium. */}
+  <figure className="mt-6">
+    <div className="rounded-xl border border-stone-200 overflow-hidden">
+      <ZoomableGallery>
+        {/* Replace with a single montage image if/when you have one */}
+        <div className="grid grid-cols-2 gap-0">
+          <ZoomableItem
+            fullSrc="/images/final-squash-1.png"
+            thumbSrc="/images/final-squash-1-thumb.png"
+            width={428} height={868}
+            alt="Profile screen—follow   and manage preferences"
           />
-          <img
-            src="/images/squash-mission.png"
-            alt="Principles applied"
-            className="rounded-lg border border-stone-200"
+          <ZoomableItem
+            fullSrc="/images/final-squash-2.png"
+            thumbSrc="/images/final-squash-2-thumb.png"
+            width={605} height={1339}
+            alt="Social feed—what's fresh and where vendors are today"
+          />
+          <ZoomableItem
+            fullSrc="/images/squash-map.png"
+            thumbSrc="/images/squash-map.png"
+            width={2048} height={1280}
+            alt="Map—proximity and open/closing status"
+          />
+          <ZoomableItem
+            fullSrc="/images/squash-market.png"
+            thumbSrc="/images/squash-market.png"
+            width={2048} height={1280}
+            alt="Market detail—hours, vendors, and primary CTAs"
           />
         </div>
-      </section>
+      </ZoomableGallery>
+    </div>
+    <figcaption className="mt-2 text-sm text-stone-600">
+      Composite of the final flow: Profile → Social Feed → Map → Market.
+    </figcaption>
+  </figure>
+{/* Flow rail with micro-captions */}
+<ol className="mt-6 flex flex-wrap gap-3">
+  {[
+    { title: "Profile", blurb: "Follow vendors; preferences travel with you." },
+    { title: "Social Feed", blurb: "Fresh drops + today’s locations in one scroll." },
+    { title: "Map", blurb: "Proximity + open-now badges reduce dead ends." },
+    { title: "Market", blurb: "Primary CTAs always visible (Directions, Save)." },
+  ].map((s, i) => (
+    <li
+      key={s.title}
+      className="flex items-start gap-2 rounded-lg border border-stone-200 bg-white/70 px-3 py-2"
+    >
+      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-stone-300 bg-stone-50 font-medium">
+        {i + 1}
+      </span>
+      <div className="flex flex-col">
+        <span className="font-medium">{s.title}</span>
+        <span className="text-stone-600 text-sm">{s.blurb}</span>
+      </div>
+    </li>
+  ))}
+</ol>
+
+  {/* Optional CTA */}
+  <div className="mt-6">
+    <a
+      href="https://your-prototype-link"
+      className="inline-flex items-center gap-2 rounded-lg border border-stone-300 bg-white px-4 py-2 text-sm font-medium hover:shadow-sm"
+      target="_blank" rel="noreferrer"
+    >
+      View interactive prototype
+      <span aria-hidden>↗</span>
+    </a>
+  </div>
+</section>
 
       {/* Results & Learnings */}
       <section className="max-w-screen-md mx-auto px-6 md:px-12 lg:px-16 py-10">
