@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./components/Header.jsx";
 import Home from "./pages/Home.jsx";
@@ -15,7 +15,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/tfr" element={<TFRCaseStudy />} /> */}
         {/* <Route path="/aarbf" element={<AARBFCaseStudy />} /> */}
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/squash" element ={<SquashCaseStudy/>}/>
       </Routes>
     </div>

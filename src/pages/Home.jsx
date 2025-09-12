@@ -1,7 +1,13 @@
+// src/pages/Home.jsx
 import About from "../components/About.jsx";
 import PortfolioSection from "../components/PortfolioCard.jsx";
 import StaticWheel from "../components/StaticWheel.jsx";
 import { Link } from "react-router-dom";
+
+// 🔽 Import images from src/assets so Vite rewrites URLs correctly
+import aarbfImg from "../assets/aarbf-case-study.png";
+import thermoImg from "../assets/thermofisher-scr.png";
+import squashImg from "../assets/squash.png";
 
 export default function Home() {
   return (
@@ -20,12 +26,13 @@ export default function Home() {
         {/* Portfolio rail (same centered column) */}
         <div className="mx-auto w-full max-w-2xl">
           <div className="flex flex-col gap-6">
+            {/* If these routes are hidden/disabled for now, comment out or make them "Coming soon" */}
             <Link to="/aarbf" className="block">
               <PortfolioSection
                 title="Full-scale redesign to boost relevancy and keep the community engaged with seasonal events"
                 description="Figma · Web Designer · UI/UX Design"
                 color="bg-blue-50"
-                image="/images/aarbf-case-study.png"
+                image={aarbfImg}                      
                 imageAlt="Two-screen mockup of a nonprofit website redesign."
               />
             </Link>
@@ -33,9 +40,9 @@ export default function Home() {
             <Link to="/thermofisher" className="block">
               <PortfolioSection
                 title="Revamping event discovery to enhance relevance, accessibility & mobile experience"
-                description= "Responsive Design · Design System · Figma"
+                description="Responsive Design · Design System · Figma"
                 color="bg-rose-50"
-                image="/images/thermofisher-scr.png"
+                image={thermoImg}                   
                 imageAlt="ThermoFisher events page design framed in a Macintosh desktop mockup"
               />
             </Link>
@@ -43,9 +50,9 @@ export default function Home() {
             <Link to="/squash" className="block">
               <PortfolioSection
                 title="Turning local connections into clear experiences"
-                description= "UX Research · Prototyping · Community"
+                description="UX Research · Prototyping · Community"
                 color="bg-emerald-50"
-                image="/images/squash.png"
+                image={squashImg}                   
                 imageAlt="Squash mockup in iphone frame"
               />
             </Link>
