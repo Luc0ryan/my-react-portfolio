@@ -29,9 +29,9 @@ export default function Home() {
             {/* If these routes are hidden/disabled for now, comment out or make them "Coming soon" */}
             <Link to="/aarbf" className="block">
               <PortfolioSection
-                title="Full-scale redesign to boost relevancy and keep the community engaged with seasonal events"
+                title="A full-scale redesign for seasonal relevance and community"
                 description="Figma · Web Designer · UI/UX Design"
-                color="bg-blue-50"
+                color="bg-blue-100"
                 image={aarbfImg}                      
                 imageAlt="Two-screen mockup of a nonprofit website redesign."
               />
@@ -39,9 +39,9 @@ export default function Home() {
 
             <Link to="/thermofisher" className="block">
               <PortfolioSection
-                title="Revamping event discovery to enhance relevance, accessibility & mobile experience"
+                title="Event discovery, reimagined for mobile-first & accessibility"
                 description="Responsive Design · Design System · Figma"
-                color="bg-rose-50"
+                color="bg-rose-100"
                 image={thermoImg}                   
                 imageAlt="ThermoFisher events page design framed in a Macintosh desktop mockup"
               />
@@ -51,7 +51,7 @@ export default function Home() {
               <PortfolioSection
                 title="Turning local connections into clear experiences"
                 description="UX Research · Prototyping · Community"
-                color="bg-emerald-50"
+                color="bg-emerald-100"
                 image={squashImg}                   
                 imageAlt="Squash mockup in iphone frame"
               />

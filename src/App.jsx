@@ -13,8 +13,8 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/tfr" element={<TFRCaseStudy />} /> */}
-        {/* <Route path="/aarbf" element={<AARBFCaseStudy />} /> */}
+        <Route path="/thermofisher" element={<ThermoFisherCaseStudy />} />
+        <Route path="/aarbf" element={<AARBFCaseStudy />} />
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/squash" element ={<SquashCaseStudy/>}/>
       </Routes>

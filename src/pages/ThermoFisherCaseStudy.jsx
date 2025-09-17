@@ -1,11 +1,21 @@
+import CaseStudyIntro from "../components/CaseStudyIntro";
+
 export default function ThermoFisherCaseStudy() {
   return (
-    <main className="max-w-screen-xl mx-auto px-6 md:px-12 py-8 space-y-8">
-      <h1 className="text-3xl md:text-4xl font-semibold">Thermo Fisher Case Study</h1>
-      <p className="text-neutral-700">
-        Placeholder content for the Thermo Fisher Scientific case study.
-        Replace this with your detailed process, mockups, and outcomes.
-      </p>
+    <main className=" mx-auto py-8 space-y-8">
+      <CaseStudyIntro
+  title="Thermo Fisher Scientific — Events Platform Redesign"
+  subtitle="Mobile-first event pages for a global audience."
+  meta={[
+    { label: "Role", value: "UI/UX Designer" },
+    { label: "When", value: "Summer 2023" },
+    { label: "Scope", value: "Event listings to registration" },
+    
+  ]}
+  description="Thermo Fisher hosts large, high-visibility events where most attendees browse on mobile. I led a mobile-first redesign aligned to the company’s design system and accessibility standards, prioritizing quick paths to schedules, speakers, and registration. The result is faster wayfinding, consistent UI patterns, and a smoother experience across devices."
+  bandBgClass = "bg-rose-50"
+/>
+
     </main>
   );
 }
