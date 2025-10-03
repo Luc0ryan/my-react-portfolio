@@ -2,9 +2,9 @@ import { FileText, User, Github } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="max-w-xl font-semibold">
+    <section className="max-w-xl font-semibold py-4">
       <div className="mb-6">
-        <div className="text-5xl leading-none"> hi, i'm lucas </div>
+        <div className=" text-[clamp(3rem,8vw,4rem)]  leading-none"> hi, i'm lucas </div>
         <div className="text-2xl mt-2">product designer · front-end dev </div>
       </div>
 

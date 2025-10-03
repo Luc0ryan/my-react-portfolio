@@ -15,7 +15,7 @@ export default function CaseStudyIntro({
   meta: MetaItem[];
 }) {
   return (
-    <section className="max-w-screen-lg mx-auto px-6 sm:px-12 lg:px-16 my-auto py-3 sm:py-5">
+    <section className="max-w-screen-lg mx-auto px-4 my-auto py-3 sm:py-5">
       {/* Cover Image */}
       <div className="w-full overflow-hidden rounded-md">
         <img
@@ -31,11 +31,11 @@ export default function CaseStudyIntro({
       </h1>
 
       {/* Meta tags */}
-      <dl className="mt-6 grid grid-cols-2 gap-y-6 sm:grid-cols-4 text-[14px] leading-snug text-neutral-700">
+      <dl className="mt-6 grid grid-cols-2 gap-y-6 py-2 sm:grid-cols-4 text-[14px] leading-snug text-neutral-700">
         {meta.map((item, i) => (
           <div key={i}>
             <dt className="font-semibold font-crimson text-neutral-600 mb-1">{item.label}</dt>
-            <dd className="text-neutral-600 text-xs">
+            <dd className="text-neutral-600">
               {Array.isArray(item.value) ? (
                 <ul className="space-y-1">
                   {item.value.map((v, j) => (

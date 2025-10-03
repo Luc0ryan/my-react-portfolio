@@ -16,9 +16,11 @@ export default function Home() {
       <div className="flex flex-col gap-12">
         {/* Rail wrapper (centered column) */}
         <div className="mx-auto w-full max-w-2xl">
-          <StaticWheel />
+          <div className="my-6">
+            <StaticWheel />
+            </div>
           {/* About is left-justified within the centered rail */}
-          <div className="max-w-lg">
+          <div className="max-w-lg ">
             <About />
           </div>
         </div>
