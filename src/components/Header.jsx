@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"; // if using react-router, otherwise use
 
 export default function Header() {
   return (
-    <header className="w-full border-b border-neutral-300">
+    <header className="w-full">
       <div className="max-w-screen-xl mx-auto flex justify-center items-center px-6 md:px-12 py-4">
         <Link
           to="/"

@@ -1,0 +1,6 @@
+{
+  "shell": "C:\\Windows\\System32\\cmd.exe",
+  "sandbox_mode": "workspace-write",
+  "network_access": "restricted",
+  "approval_policy": "on-request"
+}
