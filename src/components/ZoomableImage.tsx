@@ -122,7 +122,7 @@ export function ZoomableItem({
           src={thumbSrc}
           alt={alt}
           loading="lazy"
-          className="block w-full h-full object-cover transition-transform duration-200 group-hover:scale-[1.02]"
+          className="block object-cover transition-transform duration-200 group-hover:scale-[1.02]"
         />
 
         {/* Affordance: magnifying glass (subtle) */}

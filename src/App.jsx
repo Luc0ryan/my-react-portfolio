@@ -1,4 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop.js";
+
 
 import Header from "./components/Header.jsx";
 import Home from "./pages/Home.jsx";
@@ -9,6 +11,8 @@ import SquashCaseStudy from "./pages/SquashCaseStudy.jsx";
 export default function App() {
   return (
     <div className="bg-stone-50 min-h-screen">
+      <ScrollToTop/>
+
       <Header />
 
       <Routes>

@@ -21,7 +21,6 @@ export default function AARBFCaseStudy() {
       />
 
       <section
-        id="overview"
         className="mx-auto max-w-3xl scroll-mt-24 space-y-6 px-4"
       >
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">

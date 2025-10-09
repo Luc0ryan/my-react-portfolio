@@ -32,8 +32,7 @@ export default function ThermoFisherCaseStudy() {
       />
 
       <section
-        id="problem"
-        className="mx-auto max-w-screen-lg scroll-mt-24 px-4 space-y-4"
+        className="mx-auto max-w-screen-lg px-4 space-y-4"
       >
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
           Problem Framing
@@ -50,8 +49,7 @@ export default function ThermoFisherCaseStudy() {
       </section>
 
       <section
-        id="approach"
-        className="mx-auto max-w-screen-lg scroll-mt-24 px-4"
+        className="mx-auto max-w-screen-lg px-4"
       >
         <h2 className="font-spec text-2xl lowercase font-semibold text-stone-600">
           Design Approach
@@ -117,8 +115,7 @@ export default function ThermoFisherCaseStudy() {
       </section>
 
       <section
-        id="outcomes"
-        className="mx-auto max-w-screen-lg scroll-mt-24 px-4"
+        className="mx-auto max-w-screen-lg px-4"
       >
         <h2 className="font-spec text-2xl lowercase font-semibold text-stone-600">
           First-Look Outcomes
@@ -199,7 +196,7 @@ export default function ThermoFisherCaseStudy() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-screen-lg scroll-mt-24 space-y-8 px-4 lg:px-0">
+      <section className="mx-auto max-w-screen-lg space-y-8 px-4 lg:px-0">
         <div className="max-w-3xl space-y-4">
           <h2 className="font-spec text-2xl lowercase font-semibold text-stone-600">
             Stakeholder Collaboration
@@ -255,8 +252,7 @@ export default function ThermoFisherCaseStudy() {
       </section>
 
       <section
-        id="learnings"
-        className="mx-auto max-w-screen-lg scroll-mt-24 space-y-4 px-4 lg:px-0"
+        className="mx-auto max-w-screen-lg space-y-4 px-4 lg:px-0"
       >
         <h2 className="font-spec text-2xl lowercase font-semibold text-stone-600">
           Key Learnings
