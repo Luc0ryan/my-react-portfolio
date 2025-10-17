@@ -1,6 +1,7 @@
 import CaseStudyIntro from "../components/CaseStudyIntro";
 import coverphoto from "../assets/coverphoto-tfr.png";
 import PersonaCard from "../components/PersonaCard";
+import { ZoomableGallery, ZoomableItem } from "../components/ZoomableImage.tsx";
 
 import epavi from "../assets/epavi.png";
 import pmavi from "../assets/pmavi.png";
@@ -9,6 +10,7 @@ import tfrfilter from "../assets/tfrfilters.png";
 import tfrcard from "../assets/tfrcard.png";
 import mobile from "../assets/mobiletfr.png";
 import featured from "../assets/fullwidthfeatured.png";
+import tfrfinal from "../assets/tfr-events-final.png";
 
 export default function ThermoFisherCaseStudy() {
   return (
@@ -31,9 +33,7 @@ export default function ThermoFisherCaseStudy() {
         ]}
       />
 
-      <section
-        className="mx-auto max-w-screen-lg px-4 space-y-4"
-      >
+      <section className="mx-auto max-w-screen-lg px-4 space-y-4">
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
           Problem Framing
         </h2>
@@ -48,9 +48,7 @@ export default function ThermoFisherCaseStudy() {
         </p>
       </section>
 
-      <section
-        className="mx-auto max-w-screen-lg px-4"
-      >
+      <section className="mx-auto max-w-screen-lg px-4">
         <h2 className="font-spec text-2xl lowercase font-semibold text-stone-600">
           Design Approach
         </h2>
@@ -114,9 +112,7 @@ export default function ThermoFisherCaseStudy() {
         </div>
       </section>
 
-      <section
-        className="mx-auto max-w-screen-lg px-4"
-      >
+      <section className="mx-auto max-w-screen-lg px-4">
         <h2 className="font-spec text-2xl lowercase font-semibold text-stone-600">
           First-Look Outcomes
         </h2>
@@ -203,9 +199,10 @@ export default function ThermoFisherCaseStudy() {
           </h2>
           <p className="text-lg text-neutral-700">
             After aligning on the foundation, I met with internal stakeholders
-            to review early iterations and walkthrough early prototypes. Their feedback centered on surfacing key
-            events more prominently and ensuring longer titles remained legible,
-            which led to two major refinements.
+            to review early iterations and walkthrough early prototypes. Their
+            feedback centered on surfacing key events more prominently and
+            ensuring longer titles remained legible, which led to two major
+            refinements.
           </p>
         </div>
 
@@ -251,21 +248,89 @@ export default function ThermoFisherCaseStudy() {
         </div>
       </section>
 
-      <section
-        className="mx-auto max-w-screen-lg space-y-4 px-4 lg:px-0"
-      >
+      <section className="mx-auto max-w-screen-lg space-y-8 px-4 lg:px-0">
+        <header className="mb-8">
+          <p className="text-sm text-neutral-500">Refined Design</p>
+          <h2 className="text-2xl md:text-3xl font-spec font-semibold tracking-tight">
+            Final Events Page — a (hopefully) elevated experience
+          </h2>
+          <p className="mt-3 text-neutral-600 max-w-2xl">
+            The final layout prioritizes quick wayfinding: a persistent filter
+            bar, clear hierarchy for cards, and a “Featured Events” module that
+            raises high-priority events. The original goal was to simply
+            modernize the layout with Thermo Fisher's design system, but the end
+            result aims to create a more intuitive and accessible experience for
+            diverse users.
+          </p>
+        </header>
+
+        {/* Zoomable hero image */}
+        <div
+          className="rounded-2xl border border-neutral-200 bg-white/70 shadow-sm p-3 md:p-4"
+          aria-label="Framed final screen artifact"
+        >
+          <ZoomableGallery>
+            <ZoomableItem
+              fullSrc={tfrfinal}
+              thumbSrc={tfrfinal}
+              width={3200} // intrinsic width of full image
+              height={2234} // intrinsic height of full image
+              alt="Final Thermo Fisher Events page showing Featured Events at the top, filter bar, and condensed event cards."
+            >
+              Final Events Page — desktop (zoom to inspect filters, labels, and
+              hierarchy)
+            </ZoomableItem>
+          </ZoomableGallery>
+          <figcaption className="mt-3 text-xs text-neutral-500">
+            Zoom is enabled to preserve legibility without loading an oversized
+            inline image.
+          </figcaption>
+        </div>
+
+        {/* Optional: quick badges for what changed */}
+        <ul className="mt-8 flex flex-wrap gap-2 text-xs text-neutral-600">
+          <li className="rounded-full border border-neutral-200 px-3 py-1 bg-white/60">
+            Featured Events anchor
+          </li>
+          <li className="rounded-full border border-neutral-200 px-3 py-1 bg-white/60">
+            Persistent filter bar
+          </li>
+          <li className="rounded-full border border-neutral-200 px-3 py-1 bg-white/60">
+            Condensed, scannable cards
+          </li>
+          <li className="rounded-full border border-neutral-200 px-3 py-1 bg-white/60">
+            Responsive grid
+          </li>
+        </ul>
+      </section>
+
+      <section className="mx-auto max-w-screen-lg space-y-4 px-4 lg:px-0">
         <h2 className="font-spec text-2xl lowercase font-semibold text-stone-600">
           Key Learnings
         </h2>
-        <div className="max-w-2xl text-neutral-700">
+        <div className="space-y-4 text-neutral-700">
           <p>
-            This project reinforced how much structure, validation, and
-            alignment shape effective design. Clearer feedback loops and early
-            testing could have resolved key layout discussions faster and with
-            more evidence. I also learned to balance user advocacy with
-            stakeholder goals by emphasizing the shared intent in the design
-            process. Even without a final launch, the foundations built here
-            informed how I approach later projects.
+            At the time of writing, the redesigned event pages haven't been
+            implemented and I know they likely never will be. I've kept this
+            case study on my portfolio not as proof of a launch, but as a
+            reflection of how I approach design: through a user-centered lens,
+            even when outcomes are uncertain.
+          </p>
+          <p>
+            Designing for a broad audience under high cognitive load reinforced
+            my belief that clarity and structure come before polish. There's no
+            universal solution for pages like these, only iterative ones. The
+            best event experiences offer choice without chaos; enough
+            flexibility for users to feel in control without slipping into
+            decision fatigue.
+          </p>
+          <p>
+            Working through this taught me to balance local and global
+            affordances; how patterns can guide users seamlessly across contexts
+            while introducing new interactions that still feel intuitive. In a
+            fast-paced corporate environment, where testing cycles are limited
+            and expectations move quickly, grounding design in familiar
+            signifiers proved the surest path to user trust.
           </p>
         </div>
       </section>
