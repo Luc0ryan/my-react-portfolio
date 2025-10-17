@@ -15,14 +15,15 @@ export default function CaseStudyIntro({
   meta: MetaItem[];
 }) {
   return (
-    <section className="max-w-screen-lg mx-auto px-4 my-auto py-3 sm:py-5">
+    <section className="max-w-screen-lg mx-auto px-4 py-3 sm:py-5">
       {/* Cover Image */}
-      <div className="w-full aspect-[16/9] overflow-hidden rounded-md">
+      <div className="relative w-full aspect-[16/9] overflow-hidden rounded-md">
         <img
           src={image}
           alt={imageAlt}
           loading="eager"
-          className="w-full h-auto object-cover"
+          decoding = "async"
+        className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
 
