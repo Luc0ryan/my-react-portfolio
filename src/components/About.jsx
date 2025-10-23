@@ -5,8 +5,7 @@ export default function About() {
     <section className="max-w-xl font-semibold py-4">
       <div className="mb-6">
         <div className=" text-[clamp(3rem,8vw,4rem)]  leading-none">
-          {" "}
-          hi, i'm Lucas{" "}
+          hi, i'm Lucas
         </div>
         <div className="text-xl md:text-2xl mt-2">product designer · front-end dev </div>
       </div>
@@ -17,7 +16,7 @@ export default function About() {
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:pointer-cursor transition-opacity">
               resume
             </div>
-            <a href="#">
+            <a href= "pdfs/resumeLucasRyan.pdf" type="application/pdf" target="_blank">
               <FileText className="h-8 w-8 stroke-[1.5px]" />
             </a>
           </div>
@@ -26,16 +25,16 @@ export default function About() {
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
               linkedin
             </div>
-            <a href="https://github.com/Luc0ryan">
+            <a href="https://linkedin.com/in/lucasryan" target="_blank">
               <User className="h-8 w-8 stroke-[1.5px]" />
             </a>
           </div>
 
-          <div className="group flex flex-col items-center">
+          <div className="group flex flex-col items-center" >
             <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
               github
             </div>
-            <a href="#">
+            <a href="https://github.com/Luc0ryan" target="_blank">
               <Github className="h-8 w-8 stroke-[1.5px]" />
             </a>
           </div>
@@ -69,11 +68,11 @@ export default function About() {
       Resume
     </a>
     <span>•</span>
-    <a href="https://github.com/lucasryan" className="underline underline-offset-2 hover:text-neutral-700">
+    <a href="https://github.com/lucasryan" target="_blank" className="underline underline-offset-2 hover:text-neutral-700">
       GitHub
     </a>
     <span>•</span>
-    <a href="https://linkedin.com/in/lucasryan" className="underline underline-offset-2 hover:text-neutral-700">
+    <a href="https://linkedin.com/in/lucasryan" target="_blank" className="underline underline-offset-2 hover:text-neutral-700">
       LinkedIn
     </a>
   </div>
