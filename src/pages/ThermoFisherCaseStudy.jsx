@@ -21,9 +21,8 @@ export default function ThermoFisherCaseStudy() {
         imageAlt="Thermo Fisher event pages mockup"
         meta={[
           { label: "Role", value: "Product Designer" },
-          { label: "Audience", value: "Scientists & Event Attendees" },
-          { label: "Focus", value: "Navigation, Accessibility, Engagement" },
-          { label: "Scope", value: "National Event Platform" },
+          { label: "Audience", value: "Global Scientists & Attendees" },
+          { label: "Focus", value: "Navigation Clarity & Accessibility" },
         ]}
         
       />
