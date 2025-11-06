@@ -21,20 +21,20 @@ export default function AARBFCaseStudy() {
       />
 
       <section
-        className="mx-auto max-w-3xl scroll-mt-24 space-y-6 px-4"
+        className="mx-auto max-w-3xl scroll-mt-24 space-y-3 px-4"
       >
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
           Overview
         </h2>
 
-        <div className="text-xl md:text-3xl lg:text-4xl text-neutral-900">
+        <div className="text-xl md:text-2xl text-neutral-900">
           Rebuilding clarity and compassion for a mission that saves lives and rebuilds community.
         </div>
 
         <p className="text-lg text-neutral-700 max-w-2xl">
           The Alisa Ann Ruch Burn Foundation (AARBF) supports burn survivors and promotes
-          fire prevention education across California. Their existing website was hard to navigate—key information was buried, the donation flow was confusing,
-          and the design no longer reflected the organization's reach or warmth. I redesigned
+          fire prevention education across California. Their existing website was tricky to navigate with buried key information, the donation flow was outdated,
+          and the design no longer reflected the organization's reach or warmth. We redesigned
           the site from the ground up to create a clearer, more accessible experience that
           brings their story and impact forward.
         </p>

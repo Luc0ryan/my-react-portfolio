@@ -32,7 +32,12 @@ export default function ThermoFisherCaseStudy() {
           },
         ]}
       />
-
+      <p className="bg-rose-100 border border-neutral-200 p-4 rounded-lg text-xl leading-relaxed">
+        <strong>Quick Summary</strong> Redesigned Thermo Fisher Scientific’s
+        event platform used by thousands of scientists, improving navigation
+        clarity and engagement across global events through a modern, responsive
+        interface.
+      </p>
       <section className="mx-auto max-w-screen-lg px-4 space-y-4">
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
           Problem Framing
@@ -135,7 +140,7 @@ export default function ThermoFisherCaseStudy() {
               <p className="text-md lowercase tracking-tight text-neutral-500">
                 Filtering
               </p>
-              <h3 className="font-spec text-lg font-semibold text-neutral-900">
+              <h3 className="font-spec text-lg leading-none font-semibold text-neutral-900">
                 Find relevant events faster
               </h3>
               <p className="text-neutral-700">
@@ -151,7 +156,7 @@ export default function ThermoFisherCaseStudy() {
               <p className="text-md lowercase tracking-tight text-neutral-500">
                 Event Cards
               </p>
-              <h3 className="font-spec text-lg font-semibold text-neutral-900">
+              <h3 className="font-spec text-lg leading-none  font-semibold text-neutral-900">
                 Key details at a glance
               </h3>
               <p className="text-neutral-700">
@@ -179,7 +184,7 @@ export default function ThermoFisherCaseStudy() {
               <p className="text-md lowercase tracking-tight text-neutral-500">
                 Mobile Layout
               </p>
-              <h3 className="font-spec text-lg font-semibold text-neutral-900">
+              <h3 className="font-spec text-lg leading-none  font-semibold text-neutral-900">
                 Adapting across screens
               </h3>
               <p className="text-neutral-700">
@@ -250,7 +255,7 @@ export default function ThermoFisherCaseStudy() {
 
       <section className="mx-auto max-w-screen-lg space-y-8 px-4 lg:px-0">
         <header className="mb-8">
-          <p className="text-sm text-neutral-500">Refined Design</p>
+          <p className="text-sm text-neutral-500">refined design</p>
           <h2 className="text-2xl md:text-3xl font-spec font-semibold tracking-tight">
             Final Events Page — a (hopefully) elevated experience
           </h2>
@@ -286,22 +291,6 @@ export default function ThermoFisherCaseStudy() {
             inline image.
           </figcaption>
         </div>
-
-        {/* Optional: quick badges for what changed */}
-        <ul className="mt-8 flex flex-wrap gap-2 text-xs text-neutral-600">
-          <li className="rounded-full border border-neutral-200 px-3 py-1 bg-white/60">
-            Featured Events anchor
-          </li>
-          <li className="rounded-full border border-neutral-200 px-3 py-1 bg-white/60">
-            Persistent filter bar
-          </li>
-          <li className="rounded-full border border-neutral-200 px-3 py-1 bg-white/60">
-            Condensed, scannable cards
-          </li>
-          <li className="rounded-full border border-neutral-200 px-3 py-1 bg-white/60">
-            Responsive grid
-          </li>
-        </ul>
       </section>
 
       <section className="mx-auto max-w-screen-lg space-y-4 px-4 lg:px-0">

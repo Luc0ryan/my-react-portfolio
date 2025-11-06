@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="max-w-xl font-semibold py-4">
       <div className="mb-6">
-        <div className=" text-[clamp(3rem,8vw,4rem)]  leading-none">
+        <div className=" text-[clamp(2rem,6vw,3.5rem)]  leading-none">
           {" "}
           hi, i'm Lucas{" "}
         </div>
