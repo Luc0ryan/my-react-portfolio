@@ -7,6 +7,8 @@ export default function StaticWheel() {
     italic underline decoration-violet-600 decoration-4 underline-offset-4 px-1
     transition-shadow duration-200
     hover:[box-shadow:inset_0_-0.70em_0_0_rgb(196_181_253/0.7)]  /* violet-300 ~ 0.7 */
+    cursor-default
+
   ">
     humans
   </span>
@@ -15,6 +17,7 @@ export default function StaticWheel() {
     italic underline decoration-fuchsia-600 decoration-4 underline-offset-4 px-1
     transition-shadow duration-200
     hover:[box-shadow:inset_0_-0.50em_0_0_rgb(251_207_232/0.7)]  /* fuchsia-200 ~ 0.7 */
+    cursor-default
   ">
     impact
   </span>{" "}
@@ -23,6 +26,7 @@ export default function StaticWheel() {
     italic underline decoration-indigo-600 decoration-4 underline-offset-4 px-1
     transition-shadow duration-200
     hover:[box-shadow:inset_0_-0.40em_0_0_rgb(199_210_254/0.7)]  /* indigo-200 ~ 0.7 */
+    cursor-default
   ">
     tech
   </span>

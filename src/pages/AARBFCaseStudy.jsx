@@ -1,21 +1,27 @@
 import CaseStudyIntro from "../components/CaseStudyIntro";
 import aarbfcov from "../assets/aarbf-case-study.png";
 
-
 export default function AARBFCaseStudy() {
   return (
     <main className="max-w-3xl mx-auto px-6 md:px-12 py-8 space-y-8">
-<CaseStudyIntro
+      <CaseStudyIntro
         title="Turning compassion into clarity for a statewide nonprofit"
         image={aarbfcov}
         imageAlt="AARBF homepage redesign mockup"
         meta={[
           { label: "Role", value: "UI/UX Designer" },
           { label: "Timeline", value: "Feb-Apr 2024" },
-          { label: "Scope", value: ["Full site redesign", "Donation flow", "Program pages"] },
+          {
+            label: "Scope",
+            value: ["Full site redesign", "Donation flow", "Program pages"],
+          },
           {
             label: "Impact",
-            value: ["Accessible structure", "Emotional storytelling", "Clear donation path"],
+            value: [
+              "Accessible structure",
+              "Emotional storytelling",
+              "Clear donation path",
+            ],
           },
         ]}
       />
