@@ -33,24 +33,27 @@ export default function CaseStudyIntro({
       </h1>
 
       {/* Meta tags */}
-      <dl className="mt-6 grid grid-cols-2 gap-y-6 py-2 sm:grid-cols-4 text-[14px] leading-snug text-neutral-700">
-        {meta.map((item, i) => (
-          <div key={i}>
-            <dt className="font-semibold font-crimson text-neutral-600 mb-1">{item.label}</dt>
-            <dd className="text-neutral-600">
-              {Array.isArray(item.value) ? (
-                <ul className="space-y-1">
-                  {item.value.map((v, j) => (
-                    <li key={j}>{v}</li>
-                  ))}
-                </ul>
-              ) : (
-                item.value
-              )}
-            </dd>
-          </div>
-        ))}
-      </dl>
+      <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-6 py-2 text-[14px] leading-snug text-neutral-700">
+  {meta.map((item, i) => (
+    <div key={i} className="min-w-[10rem] flex-1 sm:flex-none">
+      <dt className="font-semibold font-crimson text-neutral-600 mb-1">
+        {item.label}
+      </dt>
+      <dd className="text-neutral-600">
+        {Array.isArray(item.value) ? (
+          <ul className="space-y-1">
+            {item.value.map((v, j) => (
+              <li key={j}>{v}</li>
+            ))}
+          </ul>
+        ) : (
+          item.value
+        )}
+      </dd>
+    </div>
+  ))}
+</dl>
+
 
       
     </section>

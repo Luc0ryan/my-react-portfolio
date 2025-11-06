@@ -1,27 +1,28 @@
 export default function PortfolioSection({
-  description,  // subtitle
-  color,        // background/text color class (applies only to image block)
+  description,
+  color,
   image,
   imageAlt,
-  title,        // main title
+  title,
 }) {
   return (
-    <div className="max-w-2xl flex flex-col gap-2">
-      {/* Image Block (with border, color, hover) */}
-<div
-  className={`overflow-hidden rounded-lg border border-neutral-300 
-              transition-transform duration-300 
-              hover:-translate-y-0.5 hover:shadow-sm ${color}`}
->
-  <img
-    src={image}
-    alt={imageAlt}
-    className="w-full max-w-xl max-h-100 object-cover mx-auto"
-  />
-</div>
+    <div className="flex flex-col gap-2 max-w-4xl">
+      {/* Image Block with natural aspect ratio */}
+      <div
+        className={`overflow-hidden rounded-lg border border-neutral-300
+                    transition-transform duration-300
+                    hover:-translate-y-0.5 hover:shadow-sm ${color}`}
+      >
+        <div className="aspect-[4/3] w-full">
+          <img
+            src={image}
+            alt={imageAlt}
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </div>
 
-
-      {/* Text Block (no border/color) */}
+      {/* Text Block */}
       <div className="flex flex-col gap-1 px-1">
         <h3 className="text-lg md:text-xl font-crimson font-bold antialiased text-left">
           {title}

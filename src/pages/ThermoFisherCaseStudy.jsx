@@ -20,25 +20,23 @@ export default function ThermoFisherCaseStudy() {
         image={coverphoto}
         imageAlt="Thermo Fisher event pages mockup"
         meta={[
-          { label: "Role", value: "UI/UX Designer" },
-          { label: "Timeline", value: "May-August 2023" },
-          {
-            label: "Scope",
-            value: ["Event listings and  pages", "Registration flows"],
-          },
-          {
-            label: "Impact",
-            value: ["Faster wayfinding", "Accessible design"],
-          },
+          { label: "Role", value: "Product Designer" },
+          { label: "Audience", value: "Scientists & Event Attendees" },
+          { label: "Focus", value: "Navigation, Accessibility, Engagement" },
+          { label: "Scope", value: "National Event Platform" },
         ]}
+        
       />
       <p className="bg-rose-100 border border-neutral-200 p-4 rounded-lg text-xl leading-relaxed">
-        <strong>Quick Summary</strong> Redesigned Thermo Fisher Scientific’s
-        event platform used by thousands of scientists, improving navigation
-        clarity and engagement across global events through a modern, responsive
-        interface.
+      <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-900">
+          Quick summary
+        </h2>  <ul className="list-disc list-outside pl-5 pt-1 space-y-1 text-lg text-neutral-800">
+    <li>Redesigned Thermo Fisher's event platform used by thousands of scientists.</li>
+    <li>Focused on improving navigation clarity and event discovery.</li>
+    <li>Created responsive interface projected to enhance attendee participation.</li>
+  </ul>
       </p>
-      <section className="mx-auto max-w-screen-lg px-4 space-y-4">
+      <section className="mx-auto max-w-screen-lg px-4 space-y-3">
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
           Problem Framing
         </h2>
@@ -257,8 +255,7 @@ export default function ThermoFisherCaseStudy() {
         <header className="mb-8">
           <p className="text-sm text-neutral-500">refined design</p>
           <h2 className="text-2xl md:text-3xl font-spec font-semibold tracking-tight">
-            Final Events Page — a (hopefully) elevated experience
-          </h2>
+          An Elevated Event Experience          </h2>
           <p className="mt-3 text-neutral-600 max-w-2xl">
             The final layout prioritizes quick wayfinding: a persistent filter
             bar, clear hierarchy for cards, and a “Featured Events” module that

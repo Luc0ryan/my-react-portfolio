@@ -1,8 +1,8 @@
 export default function StaticWheel() {
   return (
-        <section className="w-full py-6 md:py-16 text-black font-semibold text-[clamp(2rem,6vw,3.5rem)]">
+        <section className="w-full text-black font-semibold text-[clamp(2rem,6vw,3.5rem)]">
 <p className="text-left leading-[1.15] font-semibold">
-  Designing for {" "}
+  Designing <br/> for {" "}
   <span className="
     italic underline decoration-violet-600 decoration-4 underline-offset-4 px-1
     transition-shadow duration-200
@@ -12,7 +12,7 @@ export default function StaticWheel() {
   ">
     humans
   </span>
-  ,{" "}
+  {" "}
   <span className="
     italic underline decoration-fuchsia-600 decoration-4 underline-offset-4 px-1
     transition-shadow duration-200
