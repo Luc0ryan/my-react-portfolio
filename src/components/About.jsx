@@ -2,40 +2,39 @@ import { FileText, User, Github } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="max-w-xl font-semibold">
-
-
+    <section>
       <div className="flex flex-row items-start md:gap-3 font-bold text-sm">
         <div className=" flex-col mt-1 gap-6 pt-3 text-xs h-fit hidden md:flex">
-          <div className="group flex flex-col items-center">
-            <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:pointer-cursor transition-opacity">
-              resume
-            </div>
+          <div >
             <a
               href="pdfs/resumeLucasRyan.pdf"
               type="application/pdf"
               target="_blank"
+              className="group flex flex-col items-center"
             >
               <FileText className="h-8 w-8 stroke-[1.5px]" />
+              <div className="origin-bottom opacity-0 group-hover:opacity-100 transition-opacity">
+                resume
+              </div>
             </a>
           </div>
 
           <div className="group flex flex-col items-center">
-            <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
-              linkedin
-            </div>
             <a href="https://linkedin.com/in/lucasryan" target="_blank">
               <User className="h-8 w-8 stroke-[1.5px]" />
             </a>
+            <div className="origin-bottom opacity-0 group-hover:opacity-100 transition-opacity">
+              linkedin
+            </div>
           </div>
 
           <div className="group flex flex-col items-center">
-            <div className="absolute -rotate-90 origin-bottom -translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
-              github
-            </div>
             <a href="https://github.com/Luc0ryan" target="_blank">
               <Github className="h-8 w-8 stroke-[1.5px]" />
             </a>
+            <div className="origin-bottom opacity-0 group-hover:opacity-100 transition-opacity">
+              github
+            </div>
           </div>
         </div>
 

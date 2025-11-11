@@ -15,20 +15,11 @@ export default function CaseStudyIntro({
   meta: MetaItem[];
 }) {
   return (
-    <section className="max-w-screen-lg mx-auto px-4 py-3 sm:py-5">
-      {/* Cover Image */}
-      <div className="relative w-full aspect-[16/9] overflow-hidden rounded-md">
-        <img
-          src={image}
-          alt={imageAlt}
-          loading="eager"
-          decoding = "async"
-        className="absolute inset-0 h-full w-full object-cover"
-        />
-      </div>
+    <section className="mx-auto px-4 py-3 sm:py-5">
+
 
       {/* Title */}
-      <h1 className="mt-8 text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-900">
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-900">
         {title}
       </h1>
 
@@ -54,7 +45,16 @@ export default function CaseStudyIntro({
   ))}
 </dl>
 
-
+      {/* Cover Image */}
+      <div className="my-4 relative w-full aspect-[16/9] overflow-hidden rounded-md">
+        <img
+          src={image}
+          alt={imageAlt}
+          loading="eager"
+          decoding = "async"
+        className="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
       
     </section>
   );

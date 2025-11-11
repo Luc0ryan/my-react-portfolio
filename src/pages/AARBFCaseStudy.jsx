@@ -3,7 +3,7 @@ import aarbfcov from "../assets/aarbf-case-study.png";
 
 export default function AARBFCaseStudy() {
   return (
-    <main className="max-w-3xl mx-auto px-6 md:px-12 py-8 space-y-8">
+    <main className="max-w-4xl mx-auto px-6 md:px-12 py-8 space-y-8">
       <CaseStudyIntro
         title="Turning compassion into clarity for a statewide nonprofit"
         image={aarbfcov}
@@ -26,23 +26,22 @@ export default function AARBFCaseStudy() {
         ]}
       />
 
-      <section
-        className="mx-auto max-w-3xl scroll-mt-24 space-y-3 px-4"
-      >
+      <section className="mx-auto w-full scroll-mt-24 space-y-3 px-4">
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
           Overview
         </h2>
 
         <div className="text-xl md:text-2xl text-neutral-900">
-          Rebuilding clarity and compassion for a mission that saves lives and rebuilds community.
+          Rebuilding clarity and compassion for a mission that saves lives and
+          rebuilds community.
         </div>
 
-        <p className="text-lg text-neutral-700 max-w-2xl">
-          The Alisa Ann Ruch Burn Foundation (AARBF) supports burn survivors and promotes
-          fire prevention education across California. Their existing website was tricky to navigate with buried key information, the donation flow was outdated,
-          and the design no longer reflected the organization's reach or warmth. We redesigned
-          the site from the ground up to create a clearer, more accessible experience that
-          brings their story and impact forward.
+        <p className="text-lg text-neutral-700 max-w-3xl">
+          AARBF serves burn survivors and promotes statewide fire-safety
+          education. But their website made it hard to find programs or donate
+          with confidence. I rebuilt the structure and design to highlight their
+          mission, simplify navigation, and guide visitors to support and
+          resources without friction.
         </p>
       </section>
     </main>

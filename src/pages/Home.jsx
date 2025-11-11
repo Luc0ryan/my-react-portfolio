@@ -11,10 +11,10 @@ import squashImg from "../assets/squash.png";
 
 export default function Home() {
   return (
-    <main className="max-w-screen-4xl mx-auto py-6 font-sans">
+    <main className="max-w-screen-4xl mx-auto px-6 font-sans">
       {/* Vertical stack */}
       <div className="flex flex-col gap-12">
-        <div className="mx-auto w-full max-w-4xl px-6 md:px-12">
+        <div className="mx-auto w-full max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start py-8">
             {/* Left column: Wheel */}
             <div className="flex justify-center md:justify-end">
@@ -53,7 +53,7 @@ export default function Home() {
 
             <Link to="/thermofisher" className="block">
               <PortfolioSection
-                title="Event discovery, reimagined for mobile-first & accessibility"
+                title="Event discovery reimagined for mobile responsiveness & accessibility"
                 description="Responsive Design · Design System · Figma"
                 color="bg-rose-100"
                 image={thermoImg}

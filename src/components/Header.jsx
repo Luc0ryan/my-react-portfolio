@@ -8,7 +8,7 @@ export default function Header() {
           to="/"
           className="text-xl font-medium font-mono text-black hover:text-indigo-600 transition-colors"
         >
-          lkr
+          lucas ryan
         </Link>
       </div>
     </header>
