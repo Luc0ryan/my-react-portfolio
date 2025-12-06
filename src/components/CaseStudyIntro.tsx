@@ -1,6 +1,4 @@
 // components/CaseStudyIntro.tsx
-import React from "react";
-
 type MetaItem = { label: string; value: string | string[] };
 
 export default function CaseStudyIntro({
@@ -23,7 +21,19 @@ export default function CaseStudyIntro({
         {title}
       </h1>
 
-      {/* Meta tags */}
+     
+
+      {/* Cover Image */}
+<div className="my-4 relative w-full aspect-[16/9] rounded-md">
+  <img
+    src={image}
+    alt={imageAlt}
+    loading="eager"
+    decoding="async"
+    className="h-full w-full object-contain"
+  />
+      </div>
+       {/* Meta tags */}
       <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-6 py-2 text-[14px] leading-snug text-neutral-700">
   {meta.map((item, i) => (
     <div key={i} className="min-w-[10rem] flex-1 sm:flex-none">
@@ -44,18 +54,6 @@ export default function CaseStudyIntro({
     </div>
   ))}
 </dl>
-
-      {/* Cover Image */}
-      <div className="my-4 relative w-full aspect-[16/9] overflow-hidden rounded-md">
-        <img
-          src={image}
-          alt={imageAlt}
-          loading="eager"
-          decoding = "async"
-        className="absolute inset-0 h-full w-full object-cover"
-        />
-      </div>
-      
     </section>
   );
 }

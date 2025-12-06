@@ -176,9 +176,9 @@ export default function ExampleCaseStudyGallery() {
         thumbSrc="/images/aarbf-case-study-thumb.jpg"
         width={2048}
         height={1280}
-        alt="AARBF website redesign — homepage and donation flow"
+        alt="Case study hero showing homepage and donation flow redesign"
       >
-        AARBF website redesign — homepage and donation flow
+        Case study hero showing homepage and donation flow redesign
       </ZoomableItem>
 
       <ZoomableItem
@@ -186,9 +186,9 @@ export default function ExampleCaseStudyGallery() {
         thumbSrc="/images/tfs-event-thumb.jpg"
         width={1920}
         height={1200}
-        alt="Thermo Fisher Scientific — event landing page redesign"
+        alt="Thermo Fisher Scientific event landing page redesign"
       >
-        Thermo Fisher Scientific — event landing page redesign
+        Thermo Fisher Scientific event landing page redesign
       </ZoomableItem>
     </ZoomableGallery>
   );

@@ -28,20 +28,20 @@ export default function AARBFCaseStudy() {
 
       <section className="mx-auto w-full scroll-mt-24 space-y-3 px-4">
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
-          Overview
+          problem stataement
         </h2>
 
         <div className="text-xl md:text-2xl text-neutral-900">
-          Rebuilding clarity and compassion for a mission that saves lives and
-          rebuilds community.
+          AARBF's programs were buried behind unclear navigation, inconsistent
+          language, and a lack of human storytelling
         </div>
 
-        <p className="text-lg text-neutral-700 max-w-3xl">
-          AARBF serves burn survivors and promotes statewide fire-safety
-          education. But their website made it hard to find programs or donate
-          with confidence. I rebuilt the structure and design to highlight their
-          mission, simplify navigation, and guide visitors to support and
-          resources without friction.
+        <p className="text-neutral-700 max-w-3xl">
+          AARBF (Alisa Ann Ruch Burn Foundation) is a statewide nonprofit that
+          supports burn survivors and their families through prevention
+          programs, events, and recovery services. I rebuilt the structure and
+          design to highlight their mission, simplify navigation, and guide
+          visitors to support and resources without friction.
         </p>
       </section>
     </main>

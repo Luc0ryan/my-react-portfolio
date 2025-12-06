@@ -1,8 +1,5 @@
 // src/pages/SquashCaseStudy.jsx
-import ZoomableImage, {
-  ZoomableGallery,
-  ZoomableItem,
-} from "../components/ZoomableImage.jsx";
+import { ZoomableGallery, ZoomableItem } from "../components/ZoomableImage";
 
 // 👉 Import images from src/assets (Vite will handle URLs)
 import squashHero from "../assets/squash-hero.png";
@@ -55,7 +52,7 @@ export default function SquashCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-semibold">Snapshot</h2>
         <p className="mt-3 leading-7">
           We designed a lightweight app to help people quickly discover nearby markets, vendors, and fresh produce,
-          inspired of a shared love of farm to table living.
+          inspired by a shared love of farm to table living.
         </p>
         <ul className="mt-4 space-y-2 list-disc pl-6">
           <li>Simplified nav (Landing · Map · Profile) to reduce choice overload.</li>
@@ -70,7 +67,7 @@ export default function SquashCaseStudy() {
               thumbSrc={squashHero}
               width={2048}
               height={1280}
-              alt="AARBF website redesign — homepage and donation flow"
+              alt="Squash farmers market app hero screens showing landing and map views"
             />
           </ZoomableGallery>
         </figure>
@@ -114,7 +111,7 @@ export default function SquashCaseStudy() {
               thumbSrc={squashPersonas}
               width={2048}
               height={1280}
-              alt="Personas curated based on our interviews with vendors and frequent visitors"
+              alt="Personas for Squash market shoppers and vendors derived from interviews"
             />
           </ZoomableGallery>
         </figure>
@@ -135,7 +132,7 @@ export default function SquashCaseStudy() {
                 thumbSrc={squashWireframes}
                 width={2048}
                 height={1280}
-                alt="Lo-fi IA and nav"
+                alt="Squash low-fidelity IA and streamlined navigation sketches"
               />
             </ZoomableGallery>
           </div>
@@ -151,7 +148,7 @@ export default function SquashCaseStudy() {
                 thumbSrc={squashBrandguide}
                 width={2048}
                 height={1280}
-                alt="Card components and tokens"
+                alt="Squash UI card components with spacing, color, and typography tokens"
               />
             </ZoomableGallery>
           </div>
@@ -167,7 +164,7 @@ export default function SquashCaseStudy() {
                 thumbSrc={squashScreens}
                 width={2048}
                 height={1280}
-                alt="Vendor and market screens"
+                alt="Squash vendor profile and market detail screen mocks"
               />
             </ZoomableGallery>
           </div>
@@ -183,7 +180,7 @@ export default function SquashCaseStudy() {
                 thumbSrc={squashColors}
                 width={2048}
                 height={1280}
-                alt="Color evolution and contrast checks"
+                alt="Squash color palette iterations with contrast ratios and accessibility checks"
               />
             </ZoomableGallery>
           </div>
@@ -207,7 +204,7 @@ export default function SquashCaseStudy() {
                     thumbSrc={final1Thumb}
                     width={750}
                     height={1624}
-                    alt="Profile screen showing a personalized dashboard with saved markets and vendor updates, designed to help shoppers follow favorites and keep preferences consistent across visits."
+                    alt="Squash profile screen showing saved markets and vendor updates"
                     groupId="final-4"
                     index={0}
                     className="h-full w-full object-contain"
@@ -225,7 +222,7 @@ export default function SquashCaseStudy() {
                     thumbSrc={final2Thumb}
                     width={750}
                     height={1624}
-                    alt="Social feed screen aggregating real-time vendor posts and community updates, reducing discovery friction by surfacing fresh produce, market events, and peer recommendations in one scroll."
+                    alt="Squash social feed aggregating vendor posts and market updates"
                     groupId="final-4"
                     index={1}
                     className="h-full w-full object-contain"
@@ -243,7 +240,7 @@ export default function SquashCaseStudy() {
                     thumbSrc={final3Thumb}
                     width={750}
                     height={1624}
-                    alt="Map view highlighting nearby farmers markets with filters for “Open Now,” “EBT accepted,” and “Dog-friendly,” enabling quick decisions and fewer dead-ends for users on the go."
+                    alt="Squash map view with filters for open now, EBT, and dog-friendly markets"
                     groupId="final-4"
                     index={2}
                     className="h-full w-full object-contain"
@@ -261,7 +258,7 @@ export default function SquashCaseStudy() {
                     thumbSrc={final4Thumb}
                     width={750}
                     height={1624}
-                    alt="Market detail screen for Little Italy Farmers Market with hours, vendor count, parking info, and COVID-19 safety measures, emphasizing transparency and trust while providing direct CTAs to explore and attend."
+                    alt="Squash market detail for Little Italy with hours, vendor count, and parking information"
                     groupId="final-4"
                     index={3}
                     className="h-full w-full object-contain"
