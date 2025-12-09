@@ -23,7 +23,7 @@ export default function PortfolioSection({
 
       {/* Text Block */}
       <div className="flex flex-col gap-1 px-1">
-        <h3 className="text-lg md:text-xl font-crimson font-bold antialiased text-left">
+        <h3 className="text-lg  md:text-xl font-crimson font-bold antialiased text-left">
           {title}
           <span
       class="absolute left-0 bottom-0 h-[1px] w-0 bg-current transition-all duration-300 ease-out group-hover:w-full"
