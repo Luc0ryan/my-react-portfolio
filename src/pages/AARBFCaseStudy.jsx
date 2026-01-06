@@ -31,6 +31,80 @@ export default function AARBFCaseStudy() {
           { label: "Scope", value: "End-to-end redesign" },
         ]}
       />
+
+      <section className="mx-auto max-w-3xl space-y-3 text-center">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Context & Challenge
+        </h2>
+        <p className="text-neutral-600">
+          Placeholder: Set the stage for the organization, audience, and core
+          problem to solve.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-3xl space-y-3 text-center">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Goals & Success Metrics
+        </h2>
+        <p className="text-neutral-600">
+          Placeholder: Define project goals, constraints, and what success
+          looked like.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-3xl space-y-3 text-center">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Research Highlights
+        </h2>
+        <p className="text-neutral-600">
+          Placeholder: Summarize key insights, quotes, or data that shaped the
+          direction.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-3xl space-y-3 text-center">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Strategy & Approach
+        </h2>
+        <p className="text-neutral-600">
+          Placeholder: Outline the design approach, IA changes, and content
+          strategy.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-3xl space-y-3 text-center">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Design Iterations
+        </h2>
+        <p className="text-neutral-600">
+          Placeholder: Show evolution from early concepts to refined layouts.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-3xl space-y-3 text-center">
+        <h2 className="text-2xl font-semibold text-neutral-900">Final Design</h2>
+        <p className="text-neutral-600">
+          Placeholder: Highlight the final system, key screens, and rationale.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-3xl space-y-3 text-center">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Impact & Outcomes
+        </h2>
+        <p className="text-neutral-600">
+          Placeholder: Note outcomes, stakeholder feedback, or projected impact.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-3xl space-y-3 text-center">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Learnings & Next Steps
+        </h2>
+        <p className="text-neutral-600">
+          Placeholder: Summarize takeaways and what you would improve or expand.
+        </p>
+      </section>
     </main>
   );
 }
