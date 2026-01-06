@@ -8,7 +8,7 @@ type CaseStudyIntroProps = {
   image: string;
   imageAlt: string;
   overview?: string;
-  subtitle?: string;
+
   list?: ListItem[];
   meta?: MetaItem[];
 };
@@ -18,7 +18,7 @@ export default function CaseStudyIntro({
   image,
   imageAlt,
   overview,
-  subtitle,
+
   list,
   meta,
 }: CaseStudyIntroProps) {
@@ -35,7 +35,7 @@ export default function CaseStudyIntro({
         />
       </div>
 
-      {(overview || subtitle || list || meta) && (
+      {(overview || list || meta) && (
         <div className="mt-6 grid gap-6 md:grid-cols-[180px_1fr]">
           {/* Meta (left column) */}
           {meta && meta.length > 0 && (
@@ -71,12 +71,6 @@ export default function CaseStudyIntro({
             {overview && (
               <p className="text-lg sm:text-xl text-neutral-900 leading-snug">
                 {overview}
-              </p>
-            )}
-
-            {subtitle && (
-              <p className="text-neutral-600 max-w-3xl">
-                {subtitle}
               </p>
             )}
 

@@ -9,19 +9,18 @@ export default function AARBFCaseStudy() {
         title="Turning compassion into clarity for a statewide nonprofit"
         image={aarbfcov}
         imageAlt="AARBF homepage redesign mockup"
-        overview="Rebuilding clarity and compassion for a mission that saves lives and rebuilds community."
-        subtitle="A full redesign of AARBF’s site to improve accessibility, program clarity, and donor engagement."
+        overview="A full redesign of AARBF's site to improve accessibility, program clarity, and donor engagement."
         list={[
           {
-            lead: "Credibility-first repositioning,",
-            body: " closing legitimacy gaps in a public-facing nonprofit presence.",
+            lead: "Repositioning for credibility,",
+            body: " addressing trust gaps in a public-facing nonprofit site.",
           },
           {
-            lead: "Human stories as structured content,",
-            body: " translating survivor and community voices into repeatable, accessible patterns.",
+            lead: "Structuring human stories,",
+            body: " turning survivor and community voices into clear, repeatable content.",
           },
           {
-            lead: "End-to-end ownership,",
+            lead: "Owning the work end to end,",
             body: " delivering a durable redesign while balancing speed, scope, and stakeholders.",
           },
         ]}
