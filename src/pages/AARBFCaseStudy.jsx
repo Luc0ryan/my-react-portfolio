@@ -1,3 +1,4 @@
+import React from "react";
 import CaseStudyIntro from "../components/CaseStudyIntro";
 import aarbfcov from "../assets/aarbf-case-study.png";
 
@@ -8,42 +9,28 @@ export default function AARBFCaseStudy() {
         title="Turning compassion into clarity for a statewide nonprofit"
         image={aarbfcov}
         imageAlt="AARBF homepage redesign mockup"
-        meta={[
-          { label: "Role", value: "UI/UX Designer" },
-          { label: "Timeline", value: "Feb-Apr 2024" },
+        overview="Rebuilding clarity and compassion for a mission that saves lives and rebuilds community."
+        subtitle="A full redesign of AARBF’s site to improve accessibility, program clarity, and donor engagement."
+        list={[
           {
-            label: "Scope",
-            value: ["Full site redesign", "Donation flow", "Program pages"],
+            lead: "Credibility-first repositioning,",
+            body: " closing legitimacy gaps in a public-facing nonprofit presence.",
           },
           {
-            label: "Impact",
-            value: [
-              "Accessible structure",
-              "Emotional storytelling",
-              "Clear donation path",
-            ],
+            lead: "Human stories as structured content,",
+            body: " translating survivor and community voices into repeatable, accessible patterns.",
+          },
+          {
+            lead: "End-to-end ownership,",
+            body: " delivering a durable redesign while balancing speed, scope, and stakeholders.",
           },
         ]}
+        meta={[
+          { label: "Role", value: "UI/UX Designer" },
+          { label: "Timeline", value: "Feb ‘24 — Jan ‘25" },
+          { label: "Scope", value: "End-to-end redesign" },
+        ]}
       />
-
-      <section className="mx-auto w-full scroll-mt-24 space-y-3 px-4">
-        <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
-          problem stataement
-        </h2>
-
-        <div className="text-xl md:text-2xl text-neutral-900">
-          AARBF's programs were buried behind unclear navigation, inconsistent
-          language, and a lack of human storytelling
-        </div>
-
-        <p className="text-neutral-700 max-w-3xl">
-          AARBF (Alisa Ann Ruch Burn Foundation) is a statewide nonprofit that
-          supports burn survivors and their families through prevention
-          programs, events, and recovery services. I rebuilt the structure and
-          design to highlight their mission, simplify navigation, and guide
-          visitors to support and resources without friction.
-        </p>
-      </section>
     </main>
   );
 }
