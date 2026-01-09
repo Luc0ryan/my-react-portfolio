@@ -12,16 +12,16 @@ export default function AARBFCaseStudy() {
         overview="A full redesign of AARBF's site to improve accessibility, program clarity, and donor engagement."
         list={[
           {
-            lead: "Repositioning for credibility,",
-            body: " addressing trust gaps in a public-facing nonprofit site.",
+            lead: "Reframing AARBF beyond a single flagship program,",
+            body: " revealing the foundation as a year-round community nonprofit with active hospital partnerships, firefighter relationships, and programs serving survivors and families of all ages",
           },
           {
             lead: "Structuring human stories,",
-            body: " turning survivor and community voices into clear, repeatable content.",
+            body: " turning survivor and community voices into clear, repeatable content that reinforces credibility, empathy, and belonging",
           },
           {
             lead: "Owning the work end to end,",
-            body: " delivering a durable redesign while balancing speed, scope, and stakeholders.",
+            body: " delivering a durable redesign while balancing speed, scope, and stakeholder realities in a resource-constrained nonprofit environment",
           },
         ]}
         meta={[
