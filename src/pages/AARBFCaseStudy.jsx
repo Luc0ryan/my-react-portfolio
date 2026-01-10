@@ -1,5 +1,6 @@
 import React from "react";
 import CaseStudyIntro from "../components/CaseStudyIntro";
+import { ZoomableGallery, ZoomableItem } from "../components/ZoomableImage.tsx";
 import aarbfcov from "../assets/aarbf-case-study.png";
 import homeSlice1 from "../assets/home-slice-1.png";
 import homeSlice2 from "../assets/home-slice-2.png";
@@ -34,23 +35,47 @@ export default function AARBFCaseStudy() {
         ]}
       />
 
-      <section className="mx-auto max-w-4xl grid grid-cols-1 gap-6 py-6">
-        <img
-          src={homeSlice1}
-          alt="AARBF homepage vertical slice 1"
-          className="w-full rounded-md"
-        />
-        <img
-          src={homeSlice2}
-          alt="AARBF homepage vertical slice 2"
-          className="w-full rounded-md"
-        />
-        <img
-          src={homeSlice3}
-          alt="AARBF homepage vertical slice 3"
-          className="w-full rounded-md"
-        />
-      </section>
+      <ZoomableGallery className="mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
+        <div className="bg-neutral-50 p-3 rounded-lg">
+          <div className="h-[240px] md:h-[260px] overflow-hidden rounded-md">
+            <ZoomableItem
+              fullSrc={homeSlice1}
+              thumbSrc={homeSlice1}
+              width={894}
+              height={314}
+              alt="AARBF homepage slice: Featured Events and Calendar modules"
+              className="h-full"
+              fit="contain"
+            />
+          </div>
+        </div>
+
+        <div className="bg-neutral-50 p-3 rounded-lg">
+          <div className="h-[240px] md:h-[260px] overflow-hidden rounded-md">
+            <ZoomableItem
+              fullSrc={homeSlice2}
+              thumbSrc={homeSlice2}
+              width={894}
+              height={314}
+              alt="AARBF homepage slice: Partner News module"
+              className="h-full"
+            />
+          </div>
+        </div>
+
+        <div className="bg-neutral-50 p-3 rounded-lg">
+          <div className="h-[240px] md:h-[260px] overflow-hidden rounded-md">
+            <ZoomableItem
+              fullSrc={homeSlice3}
+              thumbSrc={homeSlice3}
+              width={894}
+              height={314}
+              alt="AARBF homepage slice: Camps, retreats, and outings module"
+              className="h-full"
+            />
+          </div>
+        </div>
+      </ZoomableGallery>
 
       <section className="mx-auto max-w-3xl space-y-3 text-center">
         <h2 className="text-2xl font-semibold text-neutral-900">

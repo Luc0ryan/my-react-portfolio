@@ -40,10 +40,12 @@ export function ZoomableGallery({
   children,
   padding,
   captionType = 'auto', // 'auto' | 'aside' | 'below'
+  className = '',
 }: {
   children: React.ReactNode;
   padding?: (viewportSize: Point) => { top: number; right: number; bottom: number; left: number };
   captionType?: 'auto' | 'aside' | 'below';
+  className?: string;
 }) {
   const galleryRef = useRef<HTMLDivElement | null>(null);
 
@@ -80,7 +82,10 @@ export function ZoomableGallery({
   }, [padding, captionType]);
 
   return (
-    <div ref={galleryRef} className="pswp-gallery grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-4 ">
+    <div
+      ref={galleryRef}
+      className={`pswp-gallery grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-4 ${className}`}
+    >
       {children}
     </div>
   );
@@ -95,7 +100,9 @@ export function ZoomableItem({
   width,
   height,
   alt,
+  fit = 'cover',
   className = '',
+  imgClassName = '',
   children, // optional caption content (preferred if present)
 }: {
   fullSrc: string;
@@ -103,11 +110,15 @@ export function ZoomableItem({
   width: number; // actual pixel width of full image
   height: number; // actual pixel height of full image
   alt: string;
+  fit?: 'cover' | 'contain';
   className?: string;
+  imgClassName?: string;
   children?: React.ReactNode; // caption text/markup
 }) {
+  const fitClass = fit === 'contain' ? 'object-contain' : 'object-cover';
+
   return (
-    <figure className={`group relative overflow-hidden rounded-xl ${className}`}>
+    <figure className={`group relative w-full h-full overflow-hidden rounded-xl ${className}`}>
       {/* Trigger anchor required by PhotoSwipe */}
       <a
         href={fullSrc}
@@ -122,34 +133,32 @@ export function ZoomableItem({
           src={thumbSrc}
           alt={alt}
           loading="lazy"
-          className="block object-cover transition-transform duration-200 group-hover:scale-[1.02]"
+          className={`block h-full w-full ${fitClass} transition-transform duration-200 group-hover:scale-[1.02] ${imgClassName}`}
         />
 
-        {/* Affordance: magnifying glass (subtle) */}
-{/* Affordance: magnifying glass (only on hover/focus) */}
-<span
-  aria-hidden="true"
-  className="
-    pointer-events-none absolute bottom-2 right-2 inline-flex items-center justify-center
-    rounded-full bg-black/35 p-1.5 shadow-sm
-    opacity-0 transition
-    group-hover:opacity-100
-    group-focus-visible:opacity-100
-  "
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    className="h-5 w-5 text-white"
-  >
-    <circle cx="11" cy="11" r="7" />
-    <line x1="21" y1="21" x2="16.65" y2="16.65" />
-  </svg>
-</span>
-
+        {/* Affordance: magnifying glass (only on hover/focus) */}
+        <span
+          aria-hidden="true"
+          className="
+            pointer-events-none absolute bottom-2 right-2 inline-flex items-center justify-center
+            rounded-full bg-black/35 p-1.5 shadow-sm
+            opacity-0 transition
+            group-hover:opacity-100
+            group-focus-visible:opacity-100
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="h-5 w-5 text-white"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </span>
 
         {/* Hidden (but accessible) caption node for the plugin; will be read by captionContent() */}
         {children ? (
