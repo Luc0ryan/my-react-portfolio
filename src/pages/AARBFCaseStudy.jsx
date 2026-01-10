@@ -1,6 +1,9 @@
 import React from "react";
 import CaseStudyIntro from "../components/CaseStudyIntro";
 import aarbfcov from "../assets/aarbf-case-study.png";
+import homeSlice1 from "../assets/home-slice-1.png";
+import homeSlice2 from "../assets/home-slice-2.png";
+import homeSlice3 from "../assets/home-slice-3.png";
 
 export default function AARBFCaseStudy() {
   return (
@@ -30,6 +33,24 @@ export default function AARBFCaseStudy() {
           { label: "Scope", value: "End-to-end redesign" },
         ]}
       />
+
+      <section className="mx-auto max-w-4xl grid grid-cols-1 gap-6 py-6">
+        <img
+          src={homeSlice1}
+          alt="AARBF homepage vertical slice 1"
+          className="w-full rounded-md"
+        />
+        <img
+          src={homeSlice2}
+          alt="AARBF homepage vertical slice 2"
+          className="w-full rounded-md"
+        />
+        <img
+          src={homeSlice3}
+          alt="AARBF homepage vertical slice 3"
+          className="w-full rounded-md"
+        />
+      </section>
 
       <section className="mx-auto max-w-3xl space-y-3 text-center">
         <h2 className="text-2xl font-semibold text-neutral-900">

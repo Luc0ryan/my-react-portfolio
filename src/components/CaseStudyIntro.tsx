@@ -7,6 +7,8 @@ type CaseStudyIntroProps = {
   title: string;
   image: string;
   imageAlt: string;
+  logo?: string;
+  logoAlt?: string;
   overview?: string;
 
   list?: ListItem[];
@@ -17,6 +19,8 @@ export default function CaseStudyIntro({
   title,
   image,
   imageAlt,
+  logo,
+  logoAlt,
   overview,
 
   list,
@@ -40,6 +44,15 @@ export default function CaseStudyIntro({
           {/* Meta (left column) */}
           {meta && meta.length > 0 && (
             <aside>
+              {logo && (
+                <div className="mb-4">
+                  <img
+                    src={logo}
+                    alt={logoAlt || "Organization logo"}
+                    className="max-h-10 w-auto object-contain"
+                  />
+                </div>
+              )}
               <dl className="space-y-3 text-[13px] leading-snug text-neutral-600">
                 {meta.map((item, i) => (
                   <div key={i}>
