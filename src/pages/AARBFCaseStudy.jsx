@@ -14,26 +14,46 @@ export default function AARBFCaseStudy() {
         image={aarbfcov}
         imageAlt="AARBF homepage redesign mockup"
         overview="A full redesign of AARBF's site to improve accessibility, program clarity, and donor engagement."
-        list={[
-          {
-            lead: "Reframing AARBF beyond a single flagship program,",
-            body: " revealing the foundation as a year-round community nonprofit with active hospital partnerships, firefighter relationships, and programs serving survivors and families of all ages",
-          },
-          {
-            lead: "Structuring human stories,",
-            body: " turning survivor and community voices into clear, repeatable content that reinforces credibility, empathy, and belonging",
-          },
-          {
-            lead: "Owning the work end to end,",
-            body: " delivering a durable redesign while balancing speed, scope, and stakeholder realities in a resource-constrained nonprofit environment",
-          },
-        ]}
         meta={[
           { label: "Role", value: "UI/UX Designer" },
           { label: "Timeline", value: "Feb ‘24 — Jan ‘25" },
           { label: "Scope", value: "End-to-end redesign" },
         ]}
       />
+
+      <section className="mx-auto max-w-3xl space-y-3">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          DESIGN CHALLENGES
+        </h2>
+        <ol className="text-lg space-y-6 list-decimal list-inside">
+          <li>
+            <h3 className=" font-semibold text-neutral-900">
+              Reframing AARBF beyond a single flagship program
+            </h3>
+            <p className="text-base text-neutral-600">
+              Revealing the foundation as a year-round community nonprofit with active hospital partnerships, firefighter relationships, and programs serving survivors and families of all ages.
+            </p>
+          </li>
+
+          <li>
+            <h3 className="font-semibold text-neutral-900">
+              Structuring human stories
+            </h3>
+            <p className="text-base text-neutral-600">
+              Turning survivor and community voices into clear, repeatable content that reinforces credibility, empathy, and belonging.
+            </p>
+          </li>
+
+          <li>
+            <h3 className="font-semibold text-neutral-900">
+              Owning the work end to end
+            </h3>
+            <p className="text-base text-neutral-600">
+              Delivering a durable redesign while balancing speed, scope, and stakeholder realities in a resource-constrained nonprofit environment.
+            </p>
+          </li>
+        </ol>
+      </section>
 
       <ZoomableGallery className="mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
         <div className="bg-neutral-50 p-3 rounded-lg">
