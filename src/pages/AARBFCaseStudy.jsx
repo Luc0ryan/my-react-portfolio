@@ -20,91 +20,132 @@ export default function AARBFCaseStudy() {
           { label: "Scope", value: "End-to-end redesign" },
         ]}
       />
-
       <section className="mx-auto max-w-3xl space-y-3">
         <h2 className="text-2xl font-semibold text-neutral-900">
-          DESIGN CHALLENGES
-        </h2>
-        <ol className="text-lg space-y-6 list-decimal list-inside">
+Design Challenges        </h2>
+
+        <ol className="space-y-6 list-decimal list-inside">
           <li>
-            <h3 className=" font-semibold text-neutral-900">
+            <p className="text-base font-semibold text-neutral-800">
               Reframing AARBF beyond a single flagship program
-            </h3>
+            </p>
             <p className="text-base text-neutral-600">
-              Revealing the foundation as a year-round community nonprofit with active hospital partnerships, firefighter relationships, and programs serving survivors and families of all ages.
+              Revealing the foundation as a year-round community nonprofit with
+              active hospital partnerships, firefighter relationships, and
+              programs serving survivors and families of all ages.
             </p>
           </li>
 
           <li>
-            <h3 className="font-semibold text-neutral-900">
+            <p className="text-base font-semibold text-neutral-800">
               Structuring human stories
-            </h3>
+            </p>
             <p className="text-base text-neutral-600">
-              Turning survivor and community voices into clear, repeatable content that reinforces credibility, empathy, and belonging.
+              Turning survivor and community voices into clear, repeatable
+              content that reinforces credibility, empathy, and belonging.
             </p>
           </li>
 
           <li>
-            <h3 className="font-semibold text-neutral-900">
-              Owning the work end to end
-            </h3>
+            <p className="text-base font-semibold text-neutral-800">
+              Building a system the team could actually run
+            </p>
             <p className="text-base text-neutral-600">
-              Delivering a durable redesign while balancing speed, scope, and stakeholder realities in a resource-constrained nonprofit environment.
+              Delivering a durable redesign while balancing speed, scope, and
+              stakeholder realities in a resource-constrained nonprofit
+              environment.
             </p>
           </li>
         </ol>
       </section>
 
-      <ZoomableGallery className="mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
-        <div className="bg-neutral-50 p-3 rounded-lg">
-          <div className="h-[240px] md:h-[260px] overflow-hidden rounded-md">
-            <ZoomableItem
-              fullSrc={homeSlice1}
-              thumbSrc={homeSlice1}
-              width={894}
-              height={314}
-              alt="AARBF homepage slice: Featured Events and Calendar modules"
-              className="h-full"
-              fit="contain"
-            />
-          </div>
-        </div>
-
-        <div className="bg-neutral-50 p-3 rounded-lg">
-          <div className="h-[240px] md:h-[260px] overflow-hidden rounded-md">
-            <ZoomableItem
-              fullSrc={homeSlice2}
-              thumbSrc={homeSlice2}
-              width={894}
-              height={314}
-              alt="AARBF homepage slice: Partner News module"
-              className="h-full"
-            />
-          </div>
-        </div>
-
-        <div className="bg-neutral-50 p-3 rounded-lg">
-          <div className="h-[240px] md:h-[260px] overflow-hidden rounded-md">
-            <ZoomableItem
-              fullSrc={homeSlice3}
-              thumbSrc={homeSlice3}
-              width={894}
-              height={314}
-              alt="AARBF homepage slice: Camps, retreats, and outings module"
-              className="h-full"
-            />
-          </div>
-        </div>
-      </ZoomableGallery>
-
-      <section className="mx-auto max-w-3xl space-y-3 text-center">
+      <section className="mx-auto max-w-3xl space-y-4">
         <h2 className="text-2xl font-semibold text-neutral-900">
-          Context & Challenge
+          What’s AARBF About?
         </h2>
-        <p className="text-neutral-600">
-          Placeholder: Set the stage for the organization, audience, and core
-          problem to solve.
+
+        <p className="text-neutral-600 leading-relaxed">
+          Alisa Ann Ruch Burn Foundation (AARBF) is one of the largest organizations supporting burn survivors in California. Through hospital partnerships, educational outreach, and direct survivor programs, the foundation provides long-term community and care across the state.
         </p>
+
+        <p className="text-neutral-600 leading-relaxed">
+          Their visibility, however, was concentrated around a single moment: Champ Camp, the annual summer program that brings hundreds of burn survivors and families together to find connection and support. Outside of Champ Camp, event participation and fundraising engagement had steadily declined. </p>
+          <p className="text-neutral-600 leading-relaxed">
+            Despite strong relationships with burn care units and firefighting departments, AARBF struggled to communicate the breadth of their year-round impact to the broader public. The opportunity was clear: reposition the website to reflect an organization whose strength extends far beyond one flagship event.
+        </p>
+      </section>
+
+      <section className="w-full space-y-12">
+
+        <div className="w-full space-y-4">
+          <div className="overflow-hidden border border-neutral-200 rounded-lg">
+            <ZoomableGallery>
+              <ZoomableItem
+                fullSrc={homeSlice1}
+                thumbSrc={homeSlice1}
+                width={894}
+                height={314}
+                alt="AARBF redesign — featured events and calendar"
+              />
+            </ZoomableGallery>
+          </div>
+
+          <div className="space-y-1">
+            <h3 className="text-lg font-semibold text-neutral-900">
+              Featured Events & Calendar
+            </h3>
+            <p className="leading-relaxed text-neutral-600">
+              Clarifying event visibility and reducing reliance on a single flagship program by elevating year-round activity.
+            </p>
+          </div>
+        </div>
+
+        <div className="w-full space-y-4">
+          <div className="overflow-hidden border border-neutral-200 rounded-lg">
+            <ZoomableGallery>
+              <ZoomableItem
+                fullSrc={homeSlice2}
+                thumbSrc={homeSlice2}
+                width={1413}
+                height={559}
+                alt="AARBF redesign — partner news and community signals"
+              />
+            </ZoomableGallery>
+          </div>
+
+          <div className="space-y-1">
+            <h3 className="text-lg font-semibold text-neutral-900">
+              Partner News & Community Signals
+            </h3>
+            <p className="leading-relaxed text-neutral-600">
+              Reinforcing seasonal engagement and statewide presence through clearer storytelling and recurring updates.
+            </p>
+          </div>
+        </div>
+
+        <div className="w-full space-y-4">
+          <div className="overflow-hidden border border-neutral-200 rounded-lg">
+            <ZoomableGallery>
+              <ZoomableItem
+                fullSrc={homeSlice3}
+                thumbSrc={homeSlice3}
+                width={894}
+                height={314}
+                alt="AARBF redesign — programs and retreats"
+              />
+            </ZoomableGallery>
+          </div>
+
+          <div className="space-y-1">
+            <h3 className="text-lg font-semibold text-neutral-900">
+              Programs & Retreats
+            </h3>
+            <p className="leading-relaxed text-neutral-600">
+              Organizing camps, retreats, and outings into a system that feels accessible, human, and easy to navigate.
+            </p>
+          </div>
+        </div>
+
       </section>
 
       <section className="mx-auto max-w-3xl space-y-3 text-center">
@@ -147,7 +188,9 @@ export default function AARBFCaseStudy() {
       </section>
 
       <section className="mx-auto max-w-3xl space-y-3 text-center">
-        <h2 className="text-2xl font-semibold text-neutral-900">Final Design</h2>
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Final Design
+        </h2>
         <p className="text-neutral-600">
           Placeholder: Highlight the final system, key screens, and rationale.
         </p>
