@@ -24,10 +24,10 @@ export default function AARBFCaseStudy() {
         <h2 className="text-2xl font-semibold text-neutral-900">
 Design Challenges        </h2>
 
-        <ol className="space-y-6 list-decimal list-inside">
+        <ul className="space-y-6 list-inside">
           <li>
             <p className="text-base font-semibold text-neutral-800">
-              Reframing AARBF beyond a single flagship program
+              1. Reframing AARBF beyond a single flagship program
             </p>
             <p className="text-base text-neutral-600">
               Revealing the foundation as a year-round community nonprofit with
@@ -38,7 +38,7 @@ Design Challenges        </h2>
 
           <li>
             <p className="text-base font-semibold text-neutral-800">
-              Structuring human stories
+              2. Structuring human stories
             </p>
             <p className="text-base text-neutral-600">
               Turning survivor and community voices into clear, repeatable
@@ -48,7 +48,7 @@ Design Challenges        </h2>
 
           <li>
             <p className="text-base font-semibold text-neutral-800">
-              Building a system the team could actually run
+              3. Building a system the team could actually run
             </p>
             <p className="text-base text-neutral-600">
               Delivering a durable redesign while balancing speed, scope, and
@@ -56,12 +56,12 @@ Design Challenges        </h2>
               environment.
             </p>
           </li>
-        </ol>
+        </ul>
       </section>
 
       <section className="mx-auto max-w-3xl space-y-4">
         <h2 className="text-2xl font-semibold text-neutral-900">
-          What’s AARBF About?
+          What's AARBF About?
         </h2>
 
         <p className="text-neutral-600 leading-relaxed">
@@ -69,10 +69,17 @@ Design Challenges        </h2>
         </p>
 
         <p className="text-neutral-600 leading-relaxed">
-          Their visibility, however, was concentrated around a single moment: Champ Camp, the annual summer program that brings hundreds of burn survivors and families together to find connection and support. Outside of Champ Camp, event participation and fundraising engagement had steadily declined. </p>
+          Their visibility, however, was <strong>concentrated around a single moment: Champ Camp,</strong> the annual summer program that brings hundreds of burn survivors and families together to find connection and support. Outside of Champ Camp, 
+          <strong> event participation and fundraising engagement had steadily declined.</strong> </p>
           <p className="text-neutral-600 leading-relaxed">
-            Despite strong relationships with burn care units and firefighting departments, AARBF struggled to communicate the breadth of their year-round impact to the broader public. The opportunity was clear: reposition the website to reflect an organization whose strength extends far beyond one flagship event.
+            Despite strong relationships with burn care units and firefighting departments, AARBF struggled to communicate the breadth of their year-round impact to the broader public. The opportunity was clear: <strong>reposition the website to reflect an organization whose strength extends far beyond one flagship event.</strong>
         </p>
+      </section>
+
+      <section className="w-full space-y-12">
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Establishing a Clear Top-Down Structure
+        </h2>
       </section>
 
       <section className="w-full space-y-12">
@@ -148,71 +155,7 @@ Design Challenges        </h2>
 
       </section>
 
-      <section className="mx-auto max-w-3xl space-y-3 text-center">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          Goals & Success Metrics
-        </h2>
-        <p className="text-neutral-600">
-          Placeholder: Define project goals, constraints, and what success
-          looked like.
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-3xl space-y-3 text-center">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          Research Highlights
-        </h2>
-        <p className="text-neutral-600">
-          Placeholder: Summarize key insights, quotes, or data that shaped the
-          direction.
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-3xl space-y-3 text-center">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          Strategy & Approach
-        </h2>
-        <p className="text-neutral-600">
-          Placeholder: Outline the design approach, IA changes, and content
-          strategy.
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-3xl space-y-3 text-center">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          Design Iterations
-        </h2>
-        <p className="text-neutral-600">
-          Placeholder: Show evolution from early concepts to refined layouts.
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-3xl space-y-3 text-center">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          Final Design
-        </h2>
-        <p className="text-neutral-600">
-          Placeholder: Highlight the final system, key screens, and rationale.
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-3xl space-y-3 text-center">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          Impact & Outcomes
-        </h2>
-        <p className="text-neutral-600">
-          Placeholder: Note outcomes, stakeholder feedback, or projected impact.
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-3xl space-y-3 text-center">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          Learnings & Next Steps
-        </h2>
-        <p className="text-neutral-600">
-          Placeholder: Summarize takeaways and what you would improve or expand.
-        </p>
-      </section>
+   
     </main>
   );
 }
