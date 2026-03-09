@@ -8,154 +8,329 @@ import homeSlice3 from "../assets/home-slice-3.png";
 
 export default function AARBFCaseStudy() {
   return (
-    <main className="max-w-4xl mx-auto px-6 md:px-12 py-8 space-y-8">
+    <main>
       <CaseStudyIntro
-        title="Turning compassion into clarity for a statewide nonprofit"
+        title="From Single Event to Statewide Community"
         image={aarbfcov}
         imageAlt="AARBF homepage redesign mockup"
-        overview="A full redesign of AARBF's site to improve accessibility, program clarity, and donor engagement."
+        overview="Repositioning a statewide burn foundation's digital presence to reflect the full scope of its community and programs"
         meta={[
           { label: "Role", value: "UI/UX Designer" },
-          { label: "Timeline", value: "Feb ‘24 — Jan ‘25" },
+          { label: "Timeline", value: "Feb '24 - Jan '25" },
           { label: "Scope", value: "End-to-end redesign" },
         ]}
       />
-      <section className="mx-auto max-w-3xl space-y-3">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-Design Challenges        </h2>
-
-        <ul className="space-y-6 list-inside">
-          <li>
-            <p className="text-base font-semibold text-neutral-800">
-              1. Reframing AARBF beyond a single flagship program
-            </p>
-            <p className="text-base text-neutral-600">
-              Revealing the foundation as a year-round community nonprofit with
-              active hospital partnerships, firefighter relationships, and
-              programs serving survivors and families of all ages.
-            </p>
-          </li>
-
-          <li>
-            <p className="text-base font-semibold text-neutral-800">
-              2. Structuring human stories
-            </p>
-            <p className="text-base text-neutral-600">
-              Turning survivor and community voices into clear, repeatable
-              content that reinforces credibility, empathy, and belonging.
-            </p>
-          </li>
-
-          <li>
-            <p className="text-base font-semibold text-neutral-800">
-              3. Building a system the team could actually run
-            </p>
-            <p className="text-base text-neutral-600">
-              Delivering a durable redesign while balancing speed, scope, and
-              stakeholder realities in a resource-constrained nonprofit
-              environment.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mx-auto max-w-3xl space-y-4">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          What's AARBF About?
+<section className = "max-w-4xl mx-auto px-6 md:px-12 py-8 space-y-8">
+      <section className="py-16 px-6 max-w-3xl mx-auto">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          Background
         </h2>
-
-        <p className="text-neutral-600 leading-relaxed">
-          Alisa Ann Ruch Burn Foundation (AARBF) is one of the largest organizations supporting burn survivors in California. Through hospital partnerships, educational outreach, and direct survivor programs, the foundation provides long-term community and care across the state.
+        <h3 className="text-2xl font-bold mb-6">What's AARBF About?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Alisa Ann Ruch Burn Foundation (AARBF) is one of California's
+          largest burn support organizations. Through hospital partnerships,
+          educational outreach, and direct survivor programs, the foundation
+          provides <strong>long-term community and care statewide</strong>.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          While Champ Camp remains its most publicly recognized program,
+          <strong>
+            AARBF's impact extends far beyond a single annual event.
+          </strong>
+          The website needed to communicate that broader, year-round presence
+          with clarity and authority.
         </p>
 
-        <p className="text-neutral-600 leading-relaxed">
-          Their visibility, however, was <strong>concentrated around a single moment: Champ Camp,</strong> the annual summer program that brings hundreds of burn survivors and families together to find connection and support. Outside of Champ Camp, 
-          <strong> event participation and fundraising engagement had steadily declined.</strong> </p>
-          <p className="text-neutral-600 leading-relaxed">
-            Despite strong relationships with burn care units and firefighting departments, AARBF struggled to communicate the breadth of their year-round impact to the broader public. The opportunity was clear: <strong>reposition the website to reflect an organization whose strength extends far beyond one flagship event.</strong>
+        {/* VISUAL CUE */}
+        {/* Recommended visual: Side-by-side old vs. new homepage screenshot */}
+      </section>
+      <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          Objectives
+        </h2>
+        <h3 className="text-2xl font-bold mb-8">Project Objectives</h3>
+
+        <div className="space-y-8">
+          <div className="flex gap-6 items-start">
+            <span className="text-3xl font-black text-gray-300 leading-none select-none">
+              01
+            </span>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">
+                Clarify the organization's full scope.
+              </p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Ensure burn survivors, fire agencies, community partners, and
+                donors could quickly understand AARBF's statewide impact and
+                access the services relevant to them.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-6 items-start">
+            <span className="text-3xl font-black text-gray-300 leading-none select-none">
+              02
+            </span>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">
+                Rebalance public perception.
+              </p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Present a distributed, comprehensive view of year-round programs
+                beyond the flagship recognition of Champ Camp.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-6 items-start">
+            <span className="text-3xl font-black text-gray-300 leading-none select-none">
+              03
+            </span>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">
+                Improve usability and sustainability.
+              </p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Create a responsive, conversion-ready experience that was easy
+                for non-technical staff to maintain.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          Discovery
+        </h2>
+        <h3 className="text-2xl font-bold mb-6">Discovery & Constraints</h3>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stakeholder discussions centered on fundraising sustainability{" "}
+          <strong>Donations were not meeting organizational needs,</strong> and
+          secondary programs were comparatively underrepresented across the
+          site.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The organization's credibility was strong, evidenced by sustained
+          community engagement and the long-standing success of its newsletter,
+          but
+          <strong>
+            the website did not clearly articulate the full scope of its
+            services
+          </strong>
+          or provide a streamlined path to donate.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          I served as the sole designer with full creative ownership alongside a
+          project lead and development team. There was no dedicated UX research
+          budget; decisions were informed by stakeholder input and an external
+          Stanford GSB study that identified financial sustainability as the
+          primary strategic objective.
+        </p>
+
+        {/* VISUAL CUE */}
+        {/* Recommended visual: Audit screenshot of old site or heuristic evaluation notes */}
+      </section>
+      <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          Strategy
+        </h2>
+        <h3 className="text-2xl font-bold mb-6">
+          Repositioning the Digital Presence
+        </h3>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The redesign{" "}
+          <strong>
+            shifted the site from an event-centered narrative to a year-round
+            service model.
+          </strong>{" "}
+          Navigation and page structure were rebalanced to proportionately
+          represent ongoing programs, survivor services, partnerships, and
+          fundraising initiatives.  
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Champ Camp remained prominent, but no longer singular. The
+          architecture was rebuilt to make the organization's full scope
+          immediately legible: reinforcing credibility while supporting diverse
+          engagement and donation pathways.
+        </p>
+
+        {/* VISUAL CUE */}
+        {/* Recommended visual: Sitemap or IA diagram showing before/after structure */}
+      </section>
+      <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          Information Architecture
+        </h2>
+        <h3 className="text-2xl font-bold mb-6">
+          Architecting a Scalable Navigation System
+        </h3>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The original site lacked a governing structure. While core pillars
+          were present, content was distributed across loosely defined
+          categories and inconsistent page hierarchies. Users could access
+          resources, but the pathway to them was not always predictable or
+          progressively structured.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The redesign introduced a{" "}
+          <strong>
+            governed L1 → L2 → L3 framework modeled as a transit network:
+          </strong>{" "}
+          clear hubs, defined pathways, and predictable stops. Users enter
+          through focused L1 anchors and select a pathway aligned with their
+          intent, moving toward targeted destinations — whether educational
+          tools, medical support, or grants and scholarships.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A reusable tab component was deployed across the site to reinforce
+          structure and scannability. Tabs segment related content into distinct
+          lanes, reduce cognitive load, and allow lateral navigation without
+          disrupting context.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Scalability was engineered through modular WordPress building blocks
+          that enable new programs and resources to be added without
+          restructuring the system. The result is a navigation architecture
+          designed for clarity, flexibility, and sustained growth.
+        </p>
+
+        {/* VISUAL CUE */}
+        {/* Recommended visuals:
+       1. L1→L2→L3 diagram / transit map sketch
+       2. Screenshot of tab component in context (e.g. Camps page) */}
+      </section>
+      <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          Conversion Design
+        </h2>
+        <h3 className="text-2xl font-bold mb-6">
+          Reframing the Donation Experience
+        </h3>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One of the primary redesign objectives was to improve fundraising
+          performance. The existing donation form introduced unnecessary
+          friction: a legacy layout, redundant inputs, excessive required
+          fields, and little emotional reassurance.{" "}
+          <strong>
+            The interaction felt procedural rather than mission-driven
+          </strong>
+          at the most trust-sensitive moment of the user journey.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          I restructured the donation flow as a focused, multi-phase experience.
+          Non-essential data collection was removed, and the process was
+          reorganized into a staged, multi-step flow with visible progress
+          indicators. Each stage isolates a specific type of decision, reducing
+          visible complexity and making progress legible.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The form is anchored within a full-viewport layout that reinforces
+          AARBF's mission and community impact,{" "}
+          <strong>
+            reframing the interaction from transaction to contribution.
+          </strong>
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The objective was not simply to simplify a form, but to treat the
+          moment as a credibility test. Donors decide in seconds whether an
+          organization appears trustworthy and competent. By minimizing friction
+          and reinforcing organizational clarity throughout the process, the
+          experience supports both conversion and trust.
+        </p>
+        <p className="text-gray-500 text-sm leading-relaxed italic">
+          Future iterations could further reduce friction by limiting required
+          personal data and prioritizing opt-in fields. In fundraising contexts,
+          restraint in data collection is often as important as visual
+          refinement.
+        </p>
+
+        {/* VISUAL CUE */}
+        {/* Recommended visuals:
+       1. Old donation form screenshot (friction callouts annotated)
+       2. New multi-step flow mockup or screen recording */}
+      </section>
+      <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          Credibility & Narrative
+        </h2>
+        <h3 className="text-2xl font-bold mb-6">
+          Beyond Mission Statements: Emotional Storytelling
+        </h3>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One of the most important aspects of strong nonprofit websites is
+          building credibility. Mission statements give organizations a chance
+          to tell visitors what they're about. I wanted to take this a step
+          further and show their direct impact through survivor stories and
+          event recaps.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Powerful survivor stories from longtime community members were a core
+          element of AARBF buried in the older architecture. With the redesign,{" "}
+          <strong>
+            stories were surfaced across the site and placed with intent:
+          </strong> {" "}
+          a scholarship recipient's story appears on the page leading into the
+          grants and scholarships section, so visitors encounter proof of impact
+          at the exact moment they're considering a program. Newer firefighter
+          and community testimonials were woven in throughout to reinforce that
+          credibility further.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          The same logic applied to the homepage. Shifting from a
+          one-event-centric org to an active year-round community started here.
+          Working with stakeholders, I was confident the site could feature a
+          keynote event each quarter in the primary viewport. Below it,{" "}
+          <strong>
+            a dynamic events section kept upcoming programming visible, anchored
+            by event recaps
+          </strong>
+          , real evidence that people consistently show up for a community that
+          always showed up for them.
+        </p>
+
+        {/* VISUAL CUE */}
+        {/* Recommended visuals:
+       1. Scholarship page with survivor story placement highlighted
+       2. Homepage viewport showing featured event + recap section */}
+      </section>
+      <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          Reflection
+        </h2>
+        <h3 className="text-2xl font-bold mb-6">Closing</h3>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          AARBF was an extensive project. Design was delivered in 3 months, but
+          design QA and development took up the remainder of the year. On a
+          limited budget,{" "}
+          <strong>
+            we delivered a product that was no longer a static expression of
+            values, but a dynamic entry point into the burn survivor community.
+          </strong>
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Upon reflection, I would've been a stronger advocate for full
+          end-to-end prototyping. Serving as the primary QA alongside being the
+          lone designer sharpened my attention to implementation detail and
+          inspired me to become a better front-end developer. We weren't able to 
+          complete user testing, but I'm proud we met all stakeholder thresholds for satisfaction.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          One specific iteration worth pursuing is the camps and outings page
+          which was an early design.{" "}
+          <strong>
+            Replacing static date messaging on inactive events with a mailing
+            list CTA would convert passive interest into an ongoing relationship
+          </strong>{" "}
+          and a warm lead for when programs reopen.
         </p>
       </section>
-
-      <section className="w-full space-y-12">
-        <h2 className="text-2xl font-semibold text-neutral-900">
-          Establishing a Clear Top-Down Structure
-        </h2>
       </section>
-
-      <section className="w-full space-y-12">
-
-        <div className="w-full space-y-4">
-          <div className="overflow-hidden border border-neutral-200 rounded-lg">
-            <ZoomableGallery>
-              <ZoomableItem
-                fullSrc={homeSlice1}
-                thumbSrc={homeSlice1}
-                width={894}
-                height={314}
-                alt="AARBF redesign — featured events and calendar"
-              />
-            </ZoomableGallery>
-          </div>
-
-          <div className="space-y-1">
-            <h3 className="text-lg font-semibold text-neutral-900">
-              Featured Events & Calendar
-            </h3>
-            <p className="leading-relaxed text-neutral-600">
-              Clarifying event visibility and reducing reliance on a single flagship program by elevating year-round activity.
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full space-y-4">
-          <div className="overflow-hidden border border-neutral-200 rounded-lg">
-            <ZoomableGallery>
-              <ZoomableItem
-                fullSrc={homeSlice2}
-                thumbSrc={homeSlice2}
-                width={1413}
-                height={559}
-                alt="AARBF redesign — partner news and community signals"
-              />
-            </ZoomableGallery>
-          </div>
-
-          <div className="space-y-1">
-            <h3 className="text-lg font-semibold text-neutral-900">
-              Partner News & Community Signals
-            </h3>
-            <p className="leading-relaxed text-neutral-600">
-              Reinforcing seasonal engagement and statewide presence through clearer storytelling and recurring updates.
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full space-y-4">
-          <div className="overflow-hidden border border-neutral-200 rounded-lg">
-            <ZoomableGallery>
-              <ZoomableItem
-                fullSrc={homeSlice3}
-                thumbSrc={homeSlice3}
-                width={894}
-                height={314}
-                alt="AARBF redesign — programs and retreats"
-              />
-            </ZoomableGallery>
-          </div>
-
-          <div className="space-y-1">
-            <h3 className="text-lg font-semibold text-neutral-900">
-              Programs & Retreats
-            </h3>
-            <p className="leading-relaxed text-neutral-600">
-              Organizing camps, retreats, and outings into a system that feels accessible, human, and easy to navigate.
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-   
     </main>
   );
 }
