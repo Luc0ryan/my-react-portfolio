@@ -1,18 +1,18 @@
 import React from "react";
 import CaseStudyIntro from "../components/CaseStudyIntro";
 import { ZoomableGallery, ZoomableItem } from "../components/ZoomableImage.tsx";
-import aarbfcov from "../assets/aarbf-case-study.png";
-import homeSlice1 from "../assets/home-slice-1.png";
-import homeSlice2 from "../assets/home-slice-2.png";
-import homeSlice3 from "../assets/home-slice-3.png";
-import aarbfIA from "../assets/aarbf_ia.png";
+import aarbfcov from "../assets/aarbf-case-study.webp";
+import homeSlice1 from "../assets/home-slice-1.webp";
+import homeSlice2 from "../assets/home-slice-2.webp";
+import homeSlice3 from "../assets/home-slice-3.webp";
+import aarbfIA from "../assets/aarbf_ia.webp";
 import BeforeAfterSlider from "../components/beforeAfter.jsx";
-import oldHome from "../assets/aarbfOldHome.png";
-import newHome from "../assets/aarbfNewHome.png";
-import peerSupp from "../assets/peersupp.png";
-import croAARBF from "../assets/croAARBF.png";
-import donate from "../assets/donateAARBF.png";
-import eventHome from "../assets/eventHome.png";
+import oldHome from "../assets/aarbfOldHome.webp";
+import newHome from "../assets/aarbfNewHome.webp";
+import peerSupp from "../assets/peersupp.webp";
+import croAARBF from "../assets/croAARBF.webp";
+import donate from "../assets/donateAARBF.webp";
+import eventHome from "../assets/eventHome.webp";
 
 export default function AARBFCaseStudy() {
   return (
@@ -157,6 +157,7 @@ export default function AARBFCaseStudy() {
               src={croAARBF}
               alt="UI slice of the camps, retreats and outings section"
               className="w-full h-auto border-gray-200 border rounded-lg shadow-md"
+              loading = "lazy"
             />
           </div>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
@@ -193,6 +194,8 @@ export default function AARBFCaseStudy() {
               src={aarbfIA}
               alt="AARBF Information Architecture Diagram"
               className="w-full h-auto border-gray-200 border rounded-lg shadow-md"
+              loading = "lazy"
+
             />
           </div>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
@@ -243,6 +246,8 @@ export default function AARBFCaseStudy() {
               src={donate}
               alt="Donate flow redesign showing multi-step form and progress indicators"
               className="w-full h-auto border-gray-200 border rounded-lg shadow-md"
+              loading = "lazy"
+
             />
           </div>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
@@ -301,6 +306,8 @@ export default function AARBFCaseStudy() {
               src={peerSupp}
               alt="Example of AARBF credibility-building content with survivor testimonials"
               className=" w-full h-auto border-gray-200 border rounded-lg shadow-md"
+              loading = "lazy"
+
             />
             <p className="text-gray-500 text-sm italic leading-relaxed mt-4">
               Testimonials and survivor stories lend emotional credibility for key services
@@ -311,6 +318,8 @@ export default function AARBFCaseStudy() {
               src={eventHome}
               alt="Example of AARBF credibility-building content with survivor testimonials"
               className=" w-full h-auto border-gray-200 border rounded-lg shadow-md"
+              loading = "lazy"
+
             />
             <p className="text-gray-500 text-sm italic leading-relaxed mt-4">
               Dynamic events component situated above event recaps reinforcing
