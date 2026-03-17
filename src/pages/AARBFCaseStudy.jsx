@@ -9,6 +9,10 @@ import aarbfIA from "../assets/aarbf_ia.png";
 import BeforeAfterSlider from "../components/beforeAfter.jsx";
 import oldHome from "../assets/aarbfOldHome.png";
 import newHome from "../assets/aarbfNewHome.png";
+import peerSupp from "../assets/peersupp.png";
+import croAARBF from "../assets/croAARBF.png";
+import donate from "../assets/donateAARBF.png";
+import eventHome from "../assets/eventHome.png";
 
 export default function AARBFCaseStudy() {
   return (
@@ -25,16 +29,7 @@ export default function AARBFCaseStudy() {
         ]}
       />
       <section className="max-w-4xl mx-auto px-6 md:px-12 py-8 space-y-8">
-        <BeforeAfterSlider
-          beforeSrc={oldHome}
-          afterSrc={newHome}
-          beforeAlt="Screenshot of AARBF's old homepage"
-          afterAlt="Screenshot of AARBF's new homepage"
-          beforeLabel="before"
-          afterLabel="after"
-          initialPosition={50}
-        />
-        <section className="py-16 px-6 max-w-3xl mx-auto">
+        <section className="py-12 px-6 max-w-3xl mx-auto">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
             Background
           </h2>
@@ -57,7 +52,7 @@ export default function AARBFCaseStudy() {
           {/* VISUAL CUE */}
           {/* Recommended visual: Side-by-side old vs. new homepage screenshot */}
         </section>
-        <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <section className="py-12 px-6 mb-0  max-w-3xl mx-auto border-t border-gray-200">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
             Objectives
           </h2>
@@ -111,14 +106,25 @@ export default function AARBFCaseStudy() {
             </div>
           </div>
         </section>
-        <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <section className="py-12 px-6 mb-0 max-w-3xl mx-auto border-t border-gray-200">
+          <div className="w-full pb-16">
+            <BeforeAfterSlider
+              beforeSrc={oldHome}
+              afterSrc={newHome}
+              beforeAlt="Screenshot of AARBF's old homepage"
+              afterAlt="Screenshot of AARBF's new homepage"
+              beforeLabel="before"
+              afterLabel="after"
+              initialPosition={50}
+            />
+          </div>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
             Discovery
           </h2>
           <h3 className="text-2xl font-bold mb-6">Discovery & Constraints</h3>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Stakeholder discussions centered on fundraising sustainability{" "}
+            Stakeholder discussions centered on fundraising sustainability.{" "}
             <strong>Donations were not meeting organizational needs,</strong>{" "}
             and secondary programs were comparatively underrepresented across
             the site.
@@ -126,11 +132,11 @@ export default function AARBFCaseStudy() {
           <p className="text-gray-700 leading-relaxed mb-4">
             The organization's credibility was strong, evidenced by sustained
             community engagement and the long-standing success of its
-            newsletter, but
+            newsletter, but{" "}
             <strong>
               the website did not clearly articulate the full scope of its
               services
-            </strong>
+            </strong>{" "}
             or provide a streamlined path to donate.
           </p>
           <p className="text-gray-700 leading-relaxed">
@@ -144,7 +150,15 @@ export default function AARBFCaseStudy() {
           {/* VISUAL CUE */}
           {/* Recommended visual: Audit screenshot of old site or heuristic evaluation notes */}
         </section>
-        <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+
+        <section className="py-12 px-6 mb-0 max-w-3xl mx-auto">
+          <div className="w-full pb-16">
+            <img
+              src={croAARBF}
+              alt="UI slice of the camps, retreats and outings section"
+              className="w-full h-auto border-gray-200 border rounded-lg shadow-md"
+            />
+          </div>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
             Strategy
           </h2>
@@ -173,12 +187,12 @@ export default function AARBFCaseStudy() {
           {/* Recommended visual: Sitemap or IA diagram showing before/after structure */}
         </section>
 
-        <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
-          <div className="w-full py-6">
+        <section className="py-12 px-6 mb-0 max-w-3xl mx-auto">
+          <div className="w-full pb-16">
             <img
               src={aarbfIA}
               alt="AARBF Information Architecture Diagram"
-              className="w-full h-auto"
+              className="w-full h-auto border-gray-200 border rounded-lg shadow-md"
             />
           </div>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
@@ -223,7 +237,14 @@ export default function AARBFCaseStudy() {
        1. L1→L2→L3 diagram / transit map sketch
        2. Screenshot of tab component in context (e.g. Camps page) */}
         </section>
-        <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <section className="py-12 px-6 mb-0 max-w-3xl mx-auto border-t border-gray-200">
+          <div className="w-full pb-16">
+            <img
+              src={donate}
+              alt="Donate flow redesign showing multi-step form and progress indicators"
+              className="w-full h-auto border-gray-200 border rounded-lg shadow-md"
+            />
+          </div>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
             Conversion Design
           </h2>
@@ -238,7 +259,7 @@ export default function AARBFCaseStudy() {
             fields, and little emotional reassurance.{" "}
             <strong>
               The interaction felt procedural rather than mission-driven
-            </strong>
+            </strong>{" "}
             at the most trust-sensitive moment of the user journey.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -274,7 +295,28 @@ export default function AARBFCaseStudy() {
        1. Old donation form screenshot (friction callouts annotated)
        2. New multi-step flow mockup or screen recording */}
         </section>
-        <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <section className="py-12 px-6 mb-0 max-w-3xl mx-auto">
+          <div className="w-full pb-16 flex flex-col items-center">
+            <img
+              src={peerSupp}
+              alt="Example of AARBF credibility-building content with survivor testimonials"
+              className=" w-full h-auto border-gray-200 border rounded-lg shadow-md"
+            />
+            <p className="text-gray-500 text-sm italic leading-relaxed mt-4">
+              Testimonials and survivor stories lend emotional credibility for key services
+            </p>
+          </div>
+          <div className="w-full pb-16 flex flex-col items-center">
+            <img
+              src={eventHome}
+              alt="Example of AARBF credibility-building content with survivor testimonials"
+              className=" w-full h-auto border-gray-200 border rounded-lg shadow-md"
+            />
+            <p className="text-gray-500 text-sm italic leading-relaxed mt-4">
+              Dynamic events component situated above event recaps reinforcing
+              year-round engagement
+            </p>
+          </div>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
             Credibility & Narrative
           </h2>
@@ -321,7 +363,7 @@ export default function AARBFCaseStudy() {
        1. Scholarship page with survivor story placement highlighted
        2. Homepage viewport showing featured event + recap section */}
         </section>
-        <section className="py-16 px-6 max-w-3xl mx-auto border-t border-gray-100">
+        <section className="py-12 px-6 mb-0 max-w-3xl mx-auto border-t border-gray-200">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
             Reflection
           </h2>
@@ -337,23 +379,19 @@ export default function AARBFCaseStudy() {
               community.
             </strong>
           </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Upon reflection, I would've been a stronger advocate for full
-            end-to-end prototyping. Serving as the primary QA alongside being
-            the lone designer sharpened my attention to implementation detail
-            and inspired me to become a better front-end developer. We weren't
-            able to complete user testing, but I'm proud we met all stakeholder
-            thresholds for satisfaction.
-          </p>
           <p className="text-gray-700 leading-relaxed">
-            One specific iteration worth pursuing is the camps and outings page
-            which was an early design.{" "}
-            <strong>
-              Replacing static date messaging on inactive events with a mailing
-              list CTA would convert passive interest into an ongoing
-              relationship
-            </strong>{" "}
-            and a warm lead for when programs reopen.
+            One specific iteration worth pursuing is the camps and outings page.
+            Replacing static date messaging on inactive events with a mailing
+            list CTA would convert passive interest into an ongoing
+            relationship, a warm lead for when programs reopen. The
+            infrastructure to support this already exists. Part of the work on
+            this project extended to helping set up a quasi-CRM, giving AARBF
+            the pipeline to treat community engagement as a sustained process.
+            The idea had some B2B SAAS vibes, but the logic is sound: converting
+            passive interest into volunteers, recurring donors, and active
+            community members over time. The architecture is there but he ceiling
+            is staff bandwidth and the training investment to use it fully. The
+            groundwork is laid for AARBF's next chapter, wherever they chose to take it.
           </p>
         </section>
       </section>
