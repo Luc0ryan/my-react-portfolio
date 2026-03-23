@@ -2,21 +2,21 @@
 import { ZoomableGallery, ZoomableItem } from "../components/ZoomableImage";
 
 // 👉 Import images from src/assets (Vite will handle URLs)
-import squashHero from "../assets/squash-hero.png";
-import squashPersonas from "../assets/squash-personas.png";
-import squashWireframes from "../assets/squash-wireframes.png";
-import squashBrandguide from "../assets/squash-brandguide.png";
-import squashScreens from "../assets/squash-screens.png";
-import squashColors from "../assets/squash-colors.png";
+import squashHero from "../assets/squash-hero.webp";
+import squashPersonas from "../assets/squash-personas.webp";
+import squashWireframes from "../assets/squash-wireframes.webp";
+import squashBrandguide from "../assets/squash-brandguide.webp";
+import squashScreens from "../assets/squash-screens.webp";
+import squashColors from "../assets/squash-colors.webp";
 
-import final1 from "../assets/final-squash-1.png";
-import final1Thumb from "../assets/final-squash-1-thumb.png";
-import final2 from "../assets/final-squash-2.png";
-import final2Thumb from "../assets/final-squash-2-thumb.png";
-import final3 from "../assets/final-squash-3.png";
-import final3Thumb from "../assets/final-squash-3-thumb.png";
-import final4 from "../assets/final-squash-4.png";
-import final4Thumb from "../assets/final-squash-4-thumb.png";
+import final1 from "../assets/final-squash-1.webp";
+import final1Thumb from "../assets/final-squash-1-thumb.webp";
+import final2 from "../assets/final-squash-2.webp";
+import final2Thumb from "../assets/final-squash-2-thumb.webp";
+import final3 from "../assets/final-squash-3.webp";
+import final3Thumb from "../assets/final-squash-3-thumb.webp";
+import final4 from "../assets/final-squash-4.webp";
+import final4Thumb from "../assets/final-squash-4-thumb.webp";
 
 export default function SquashCaseStudy() {
   return (

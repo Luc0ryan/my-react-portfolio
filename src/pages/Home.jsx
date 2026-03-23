@@ -5,9 +5,9 @@ import StaticWheel from "../components/StaticWheel.jsx";
 import { Link } from "react-router-dom";
 
 // 🔽 Import images from src/assets so Vite rewrites URLs correctly
-import aarbfImg from "../assets/aarbf-case-study.png";
-import thermoImg from "../assets/thermofisher-scr.png";
-import squashImg from "../assets/squash.png";
+import aarbfImg from "../assets/aarbf-case-study.webp";
+import thermoImg from "../assets/thermofisher-scr.webp";
+import squashImg from "../assets/squash.webp";
 
 export default function Home() {
   return (

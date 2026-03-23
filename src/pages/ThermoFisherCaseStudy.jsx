@@ -1,16 +1,16 @@
 import CaseStudyIntro from "../components/CaseStudyIntro";
-import coverphoto from "../assets/coverphoto-tfr.png";
+import coverphoto from "../assets/coverphoto-tfr.webp";
 import PersonaCard from "../components/PersonaCard";
 import { ZoomableGallery, ZoomableItem } from "../components/ZoomableImage.tsx";
 
-import epavi from "../assets/epavi.png";
-import pmavi from "../assets/pmavi.png";
-import ecavi from "../assets/ecavi.png";
-import tfrfilter from "../assets/tfrfilters.png";
-import tfrcard from "../assets/tfrcard.png";
-import mobile from "../assets/mobiletfr.png";
-import featured from "../assets/fullwidthfeatured.png";
-import tfrfinal from "../assets/tfr-events-final.png";
+import epavi from "../assets/epavi.webp";
+import pmavi from "../assets/pmavi.webp";
+import ecavi from "../assets/ecavi.webp";
+import tfrfilter from "../assets/tfrfilters.webp";
+import tfrcard from "../assets/tfrcard.webp";
+import mobile from "../assets/mobiletfr.webp";
+import featured from "../assets/fullwidthfeatured.webp";
+import tfrfinal from "../assets/tfr-events-final.webp";
 
 export default function ThermoFisherCaseStudy() {
   return (
