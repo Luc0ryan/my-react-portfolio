@@ -1,12 +1,42 @@
-# React + Vite
+# Lucas Ryan — Product Design Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site for Lucas Ryan, product designer and front-end developer based in San Jose, CA. Built with React + Vite and deployed via GitHub Pages.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** + **React Router v7** — SPA with client-side routing
+- **Vite 7** — build tooling and dev server
+- **Tailwind CSS 4** — utility-first styling
+- **TypeScript** — used in select components
+- **lucide-react** — icon set
+- **PhotoSwipe** — lightbox for case study imagery
+- **gh-pages** — deployment to GitHub Pages
 
-## Expanding the ESLint configuration
+## Pages & Case Studies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Route | Description |
+|---|---|
+| `/` | Home — intro, skills wheel, and portfolio card grid |
+| `/aarbf` | AARBF — full-scale nonprofit website redesign for seasonal relevance and community |
+| `/thermofisher` | ThermoFisher — event discovery redesign for mobile responsiveness and accessibility |
+| `/squash` | Squash — UX research and prototyping for a local community connection app |
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Build & Deploy
+
+```bash
+npm run build     # builds to /dist
+npm run deploy    # builds and publishes to GitHub Pages via gh-pages
+```
+
+## Contact
+
+- Email: lucryan@gmail.com
+- LinkedIn: [linkedin.com/in/lucasryan](https://linkedin.com/in/lucasryan)
+- GitHub: [github.com/Luc0ryan](https://github.com/Luc0ryan)
