@@ -12,6 +12,7 @@ import squashImg from "../assets/squash.webp";
 export default function Home() {
   return (
     <main className="max-w-screen-4xl mx-auto px-6 font-sans">
+      <title>Lucas Ryan — Product Designer & Front-End Dev</title>
       {/* Vertical stack */}
       <div className="flex flex-col gap-12">
         <div className="mx-auto w-full max-w-4xl">
@@ -27,15 +28,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-{/*
-        <div className="mx-auto w-full max-w-2xl">
-          <div className="my-6">
-            <StaticWheel />
-          </div>
-          <div className="max-w-lg ">
-            <About />
-          </div>
-        </div>  */}
 
         {/* Portfolio rail (same centered column) */}
         <div className="mx-auto w-full max-w-4xl">

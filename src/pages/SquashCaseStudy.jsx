@@ -21,6 +21,7 @@ import final4Thumb from "../assets/final-squash-4-thumb.webp";
 export default function SquashCaseStudy() {
   return (
     <main className="bg-stone-50 text-stone-900">
+      <title>Squash App — Lucas Ryan</title>
       {/* ── Hero: Title + Tags + Meta (horizontal)  */}
       <section className="max-w-screen-md mx-auto px-6 md:px-12 lg:px-16 py-8">
         {/* Title + subtitle */}

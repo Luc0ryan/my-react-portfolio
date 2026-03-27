@@ -1,4 +1,5 @@
 // components/CaseStudyIntro.tsx
+import FadeImage from "./FadeImage.jsx";
 type ListItem = { lead: string; body: string };
 
 type MetaItem = { label: string; value: string | string[] };
@@ -29,15 +30,14 @@ export default function CaseStudyIntro({
   return (
     <section className="mx-auto px-4 py-6 max-w-5xl">
       {/* Hero Image */}
-      <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden">
-        <img
-          src={image}
-          alt={imageAlt}
-          loading="eager"
-          decoding="async"
-          className="h-full w-full object-contain"
-        />
-      </div>
+      <FadeImage
+        src={image}
+        alt={imageAlt}
+        loading="eager"
+        decoding="async"
+        className="h-full w-full object-contain"
+        wrapperClassName="w-full aspect-[16/9] rounded-md overflow-hidden"
+      />
 
       {(overview || list || meta) && (
         <div className="mt-6 grid gap-6 md:grid-cols-[180px_1fr]">

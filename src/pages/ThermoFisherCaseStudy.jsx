@@ -15,6 +15,7 @@ import tfrfinal from "../assets/tfr-events-final.webp";
 export default function ThermoFisherCaseStudy() {
   return (
     <main className="mx-auto max-w-3xl space-y-12 py-12">
+      <title>Thermo Fisher Events — Lucas Ryan</title>
       <CaseStudyIntro
         title="A clearer path to events that matter"
         image={coverphoto}
@@ -26,15 +27,16 @@ export default function ThermoFisherCaseStudy() {
         ]}
         
       />
-      <p className="bg-rose-100 border border-neutral-200 p-4 rounded-lg text-xl leading-relaxed">
-      <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-900">
+      <div className="bg-rose-100 border border-neutral-200 p-4 rounded-lg text-xl leading-relaxed">
+        <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-900">
           Quick summary
-        </h2>  <ul className="list-disc list-outside pl-5 pt-1 space-y-1 text-lg text-neutral-800">
-    <li>Redesigned Thermo Fisher's event platform used by thousands of scientists.</li>
-    <li>Focused on improving navigation clarity and event discovery.</li>
-    <li>Created responsive interface projected to enhance attendee participation.</li>
-  </ul>
-      </p>
+        </h2>
+        <ul className="list-disc list-outside pl-5 pt-1 space-y-1 text-lg text-neutral-800">
+          <li>Redesigned Thermo Fisher's event platform used by thousands of scientists.</li>
+          <li>Focused on improving navigation clarity and event discovery.</li>
+          <li>Created responsive interface projected to enhance attendee participation.</li>
+        </ul>
+      </div>
       <section className="mx-auto max-w-screen-lg px-4 space-y-3">
         <h2 className="font-spectral text-2xl lowercase font-semibold text-stone-600">
           Problem Framing

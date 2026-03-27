@@ -1,3 +1,5 @@
+import FadeImage from "./FadeImage.jsx";
+
 export default function PortfolioSection({
   description,
   color,
@@ -12,13 +14,12 @@ export default function PortfolioSection({
         className={`overflow-hidden rounded-lg border border-neutral-300
                     transition-transform duration-300 ease-out hover:scale-[1.008] ${color}`}
       >
-        <div className="aspect-[4/3] w-full">
-          <img
-            src={image}
-            alt={imageAlt}
-            className="h-full w-full object-cover"
-          />
-        </div>
+        <FadeImage
+          src={image}
+          alt={imageAlt}
+          className="h-full w-full object-cover"
+          wrapperClassName="aspect-[4/3] w-full"
+        />
       </div>
 
       {/* Text Block */}

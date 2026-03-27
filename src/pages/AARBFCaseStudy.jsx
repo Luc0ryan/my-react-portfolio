@@ -2,9 +2,6 @@ import React from "react";
 import CaseStudyIntro from "../components/CaseStudyIntro";
 import { ZoomableGallery, ZoomableItem } from "../components/ZoomableImage.tsx";
 import aarbfcov from "../assets/aarbf-case-study.webp";
-import homeSlice1 from "../assets/home-slice-1.webp";
-import homeSlice2 from "../assets/home-slice-2.webp";
-import homeSlice3 from "../assets/home-slice-3.webp";
 import aarbfIA from "../assets/aarbf_ia.webp";
 import BeforeAfterSlider from "../components/beforeAfter.jsx";
 import oldHome from "../assets/aarbfOldHome.webp";
@@ -17,6 +14,7 @@ import eventHome from "../assets/eventHome.webp";
 export default function AARBFCaseStudy() {
   return (
     <main>
+      <title>AARBF Redesign — Lucas Ryan</title>
       <CaseStudyIntro
         title="From Single Event to Statewide Community"
         image={aarbfcov}
